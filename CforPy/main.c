@@ -15,6 +15,7 @@ int main() {
         if(999 != Tree_Get(tr,a[i])){
             puts("????????????");
         }else{
+            
             putchar('o');
         }
     }
