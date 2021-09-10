@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/15066/CLionProjects/CforPy/include/Stack.h
+stdbool.h
+-
+
+C:/Users/15066/CLionProjects/CforPy/include/Tree.c
+malloc.h
+-
+stdio.h
+-
+Stack.h
+C:/Users/15066/CLionProjects/CforPy/include/Stack.h
+Tree.h
+C:/Users/15066/CLionProjects/CforPy/include/Tree.h
+
+C:/Users/15066/CLionProjects/CforPy/include/Tree.h
+stdbool.h
+-
+
+C:/Users/15066/CLionProjects/CforPy/main.c
+stdio.h
+-
+stdlib.h
+-
+include/Tree.h
+C:/Users/15066/CLionProjects/CforPy/include/Tree.h
+time.h
+-
+Windows.h
+C:/Users/15066/CLionProjects/CforPy/Windows.h
+
