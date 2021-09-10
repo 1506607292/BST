@@ -1,9 +1,9 @@
 Detecting C compiler ABI info failed to compile with the following output:
-Change Dir: C:/Users/15066/CLionProjects/CforPy/cmake-build-release/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/15066/CLionProjects/CforPy/BST/CforPy/cmake-build-release/CMakeFiles/CMakeTmp
 
-Run Build Command(s):nmake -f Makefile /nologo cmTC_777f1\fast && 	"C:\Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.30.30423\bin\HostX86\x86\nmake.exe"  -f CMakeFiles\cmTC_777f1.dir\build.make /nologo -L                  CMakeFiles\cmTC_777f1.dir\build
-Building C object CMakeFiles/cmTC_777f1.dir/CMakeCCompilerABI.c.obj
-	C:\Users\15066\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.4746.93\bin\cmake\win\bin\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\cmTC_777f1.dir\CMakeCCompilerABI.c.obj.d --working-dir=C:\Users\15066\CLionProjects\CforPy\cmake-build-release\CMakeFiles\CMakeTmp --filter-prefix="" -- C:\PROGRA~1\MICROS~1\2022\Preview\VC\Tools\MSVC\1430~1.304\bin\Hostx86\x86\cl.exe @C:\Users\15066\AppData\Local\Temp\nmDA78.tmp
+Run Build Command(s):nmake -f Makefile /nologo cmTC_c0176\fast && 	"C:\Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.30.30423\bin\HostX86\x86\nmake.exe"  -f CMakeFiles\cmTC_c0176.dir\build.make /nologo -L                  CMakeFiles\cmTC_c0176.dir\build
+Building C object CMakeFiles/cmTC_c0176.dir/CMakeCCompilerABI.c.obj
+	C:\Users\15066\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.4746.93\bin\cmake\win\bin\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\cmTC_c0176.dir\CMakeCCompilerABI.c.obj.d --working-dir=C:\Users\15066\CLionProjects\CforPy\BST\CforPy\cmake-build-release\CMakeFiles\CMakeTmp --filter-prefix="" -- C:\PROGRA~1\MICROS~1\2022\Preview\VC\Tools\MSVC\1430~1.304\bin\Hostx86\x86\cl.exe @C:\Users\15066\AppData\Local\Temp\nmFE48.tmp
 NMAKE : fatal error U1077: “C:\Users\15066\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.4746.93\bin\cmake\win\bin\cmake.exe”: 返回代码“0xc0000409”
 Stop.
 NMAKE : fatal error U1077: “"C:\Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.30.30423\bin\HostX86\x86\nmake.exe"”: 返回代码“0x2”

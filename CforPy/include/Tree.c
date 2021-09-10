@@ -2,29 +2,21 @@
 // Created by 15066 on 2021/9/8.
 //
 #ifndef MALLOC_H
-
 #include<malloc.h>
-
 #define MALLOC_H
 #endif
 ///////////////////////////
 #ifndef STDIO_H
-
 #include<stdio.h>
-
 #define STDIO_H
 #endif
 ///////////////////////////
-
 #ifndef STACK_H
-
 #include "Stack.h"
-
 #define STACK_H
 #endif
 ///////////////////////////
 #include "Tree.h"
-
 ///////////////////////////
 TreeNode *Tree_NewNULLNode() {
     TreeNode *pointer = (TreeNode *) malloc(sizeof(TreeNode));
@@ -36,7 +28,6 @@ TreeNode *Tree_NewNULLNode() {
     pointer->Value = NULL;
     return pointer;
 }
-
 TreeNode *Tree_NewNode(void *key, void *value) {
     TreeNode *pointer = (TreeNode *) malloc(sizeof(TreeNode));
     if (pointer == NULL) { return NULL; }
@@ -47,25 +38,45 @@ TreeNode *Tree_NewNode(void *key, void *value) {
     pointer->Value = value;
     return pointer;
 }
-
 Tree Tree_NewTree() {
     Tree tree = {NULL};
     return tree;
 }
-
-void Tree_ExchangeData(TreeNode *p, TreeNode *q) {
-    void *temp = p->Key;
-    p->Key = q->Key;
-    q->Key = temp;
-    temp = p->Value;
-    p->Value = q->Value;
-    q->Value = temp;
-}
-
 bool Tree_IsRoot(Tree *tree, TreeNode *p) {
     return tree->root == p;
 }
-
+bool Tree_SetOrInsert(Tree *tree, void *key, void *value) {
+    if (tree->root == NULL) {
+        tree->root = Tree_NewNode(key, value);
+        if (tree->root == NULL) {
+            return false;
+        }
+        tree->root->P = NULL;
+        return true;
+    }
+    TreeNode *temp = tree->root;
+    while (1) {
+        if (temp->Key == key) {
+            temp->Key = key;
+            temp->Value = value;
+            return true;
+        }
+        if (temp->Key < key && temp->R != NULL) {
+            temp = temp->R;
+        } else if (temp->Key > key && temp->L != NULL) {
+            temp = temp->L;
+        } else {
+            break;
+        }
+    }
+    TreeNode *pointer = Tree_NewNode(key, value);
+    if (pointer == NULL) {
+        return false;
+    }
+    temp->Key < key ? (temp->R = pointer) : (temp->L = pointer);
+    pointer->P = temp;
+    return true;
+}
 bool Tree_Insert(Tree *tree, void *key, void *value) {
     if (tree->root == NULL) {
         tree->root = Tree_NewNode(key, value);
@@ -96,21 +107,20 @@ bool Tree_Insert(Tree *tree, void *key, void *value) {
     pointer->P = temp;
     return true;
 }
-
-void *Tree_Get(TreeNode *tree, void *key) {
-    while (tree != NULL) {
-        if (tree->Key == key) {
-            return tree->Value;
+void *Tree_Get(Tree tree, void *key) {
+    TreeNode *pointer = tree.root;
+    while (pointer != NULL) {
+        if (pointer->Key == key) {
+            return pointer->Value;
         }
-        if (tree->Key > key) {
-            tree = tree->L;
+        if (pointer->Key > key) {
+            pointer = pointer->L;
         } else {
-            tree = tree->R;
+            pointer = pointer->R;
         }
     }
     return NULL;
 }
-
 void Tree_Destroy(Tree *tree) {
     TreeNode *pointer = tree->root;
     Stack stack = Stack_New();
@@ -132,7 +142,6 @@ void Tree_Destroy(Tree *tree) {
     }
     tree->root = NULL;
 }
-
 void Tree_Delete(Tree *tree, void *key) {
     TreeNode *pointer = tree->root;
     while (pointer != NULL) {
@@ -191,7 +200,8 @@ void Tree_Delete(Tree *tree, void *key) {
     } else {
         TreeNode *ii;
         for (ii = pointer->R; ii->L != NULL; ii = ii->L);//右子树最小的一个
-        Tree_ExchangeData(ii, pointer);
+        pointer->Key = ii->Key;
+        pointer->Value = ii->Value;
         if (ii->P->L == ii) {
             ii->P->L = ii->R;
         } else {
@@ -203,7 +213,6 @@ void Tree_Delete(Tree *tree, void *key) {
         free(ii);
     }
 }
-
 void Tree_Display_(TreeNode *tree,int layer) {
     if(!tree){
         return;
@@ -215,12 +224,11 @@ void Tree_Display_(TreeNode *tree,int layer) {
     printf_s("%d:%d\n",tree->Key,tree->Value);
     Tree_Display_(tree->R,layer+1);
 }
-
-void Tree_Display(Tree *tree) {
-    if (tree == NULL || tree->root == NULL) {
+void Tree_Display(Tree tree) {
+    if (tree.root == NULL) {
         return;
     } else {
-        Tree_Display_(tree->root,0);
+        Tree_Display_(tree.root,0);
     }
 }
 void Tree_Show_(TreeNode *tree) {
@@ -241,23 +249,24 @@ void Tree_Show_(TreeNode *tree) {
     }
     Stack_Destroy(&stack);
 }
-void Tree_Show(Tree *tree) {
-    Tree_Show_(tree->root);
+void Tree_Show(Tree tree) {
+    Tree_Show_(tree.root);
 }
-void Tree_Set(TreeNode *tree, void *key, void *value) {
-    if (tree == NULL) {
-        //perror("NULL Tree !");
+bool Tree_Set(Tree tree, void *key, void *value) {
+    if (tree.root == NULL) {
+        return false;
     }
-    while (tree != NULL) {
-        if (tree->Key == key) {
-            tree->Value = value;
-            return;
+    TreeNode *pointer = tree.root;
+    while (pointer != NULL) {
+        if (pointer->Key == key) {
+            pointer->Value = value;
+            return true;
         }
-        if (tree->Key > key) {
-            tree = tree->L;
+        if (pointer->Key > key) {
+            pointer = pointer->L;
         } else {
-            tree = tree->R;
+            pointer = pointer->R;
         }
     }
-    //perror("Nonexistent key !");
+    return false;
 }

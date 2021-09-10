@@ -8,10 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "C:/Users/15066/CLionProjects/CforPy/include/Dict.c" "C:/Users/15066/CLionProjects/CforPy/cmake-build-release/CMakeFiles/CforPy.dir/include/Dict.c.obj"
-  "C:/Users/15066/CLionProjects/CforPy/include/Stack.c" "C:/Users/15066/CLionProjects/CforPy/cmake-build-release/CMakeFiles/CforPy.dir/include/Stack.c.obj"
-  "C:/Users/15066/CLionProjects/CforPy/include/Tree.c" "C:/Users/15066/CLionProjects/CforPy/cmake-build-release/CMakeFiles/CforPy.dir/include/Tree.c.obj"
-  "C:/Users/15066/CLionProjects/CforPy/main.c" "C:/Users/15066/CLionProjects/CforPy/cmake-build-release/CMakeFiles/CforPy.dir/main.c.obj"
+  "C:/Users/15066/CLionProjects/CforPy/BST/CforPy/include/Dict.c" "C:/Users/15066/CLionProjects/CforPy/BST/CforPy/cmake-build-release/CMakeFiles/CforPy.dir/include/Dict.c.obj"
+  "C:/Users/15066/CLionProjects/CforPy/BST/CforPy/include/Stack.c" "C:/Users/15066/CLionProjects/CforPy/BST/CforPy/cmake-build-release/CMakeFiles/CforPy.dir/include/Stack.c.obj"
+  "C:/Users/15066/CLionProjects/CforPy/BST/CforPy/include/Tree.c" "C:/Users/15066/CLionProjects/CforPy/BST/CforPy/cmake-build-release/CMakeFiles/CforPy.dir/include/Tree.c.obj"
+  "C:/Users/15066/CLionProjects/CforPy/BST/CforPy/main.c" "C:/Users/15066/CLionProjects/CforPy/BST/CforPy/cmake-build-release/CMakeFiles/CforPy.dir/main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "MSVC")
 

@@ -1,4 +1,4 @@
-C:\Users\15066\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.4746.93\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Release -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - NMake Makefiles" C:\Users\15066\CLionProjects\CforPy
+C:\Users\15066\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.4746.93\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Release -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - NMake Makefiles" C:\Users\15066\CLionProjects\CforPy\BST\CforPy
 -- The C compiler identification is MSVC 19.30.30423.0
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - failed
@@ -8,4 +8,4 @@ C:\Users\15066\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.4746.93\bin\c
 -- Detecting C compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: C:/Users/15066/CLionProjects/CforPy/cmake-build-release
+-- Build files have been written to: C:/Users/15066/CLionProjects/CforPy/BST/CforPy/cmake-build-release

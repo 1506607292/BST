@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/15066/CLionProjects/CforPy
+# Install script for directory: C:/Users/15066/CLionProjects/CforPy/BST/CforPy
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/15066/CLionProjects/CforPy/cmake-build-release/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/15066/CLionProjects/CforPy/BST/CforPy/cmake-build-release/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

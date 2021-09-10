@@ -42,10 +42,10 @@ RM = C:\Users\15066\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.4746.93\
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\15066\CLionProjects\CforPy
+CMAKE_SOURCE_DIR = C:\Users\15066\CLionProjects\CforPy\BST\CforPy
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\15066\CLionProjects\CforPy\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\15066\CLionProjects\CforPy\BST\CforPy\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles\CforPy.dir\depend.make
@@ -57,78 +57,78 @@ include CMakeFiles\CforPy.dir\flags.make
 
 CMakeFiles\CforPy.dir\main.c.obj: CMakeFiles\CforPy.dir\flags.make
 CMakeFiles\CforPy.dir\main.c.obj: ..\main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\15066\CLionProjects\CforPy\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/CforPy.dir/main.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\15066\CLionProjects\CforPy\BST\CforPy\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/CforPy.dir/main.c.obj"
 	C:\PROGRA~1\MICROS~1\2022\Preview\VC\Tools\MSVC\1430~1.304\bin\Hostx86\x86\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoCMakeFiles\CforPy.dir\main.c.obj /FdCMakeFiles\CforPy.dir\ /FS -c C:\Users\15066\CLionProjects\CforPy\main.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoCMakeFiles\CforPy.dir\main.c.obj /FdCMakeFiles\CforPy.dir\ /FS -c C:\Users\15066\CLionProjects\CforPy\BST\CforPy\main.c
 <<
 
 CMakeFiles\CforPy.dir\main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/CforPy.dir/main.c.i"
 	C:\PROGRA~1\MICROS~1\2022\Preview\VC\Tools\MSVC\1430~1.304\bin\Hostx86\x86\cl.exe > CMakeFiles\CforPy.dir\main.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\15066\CLionProjects\CforPy\main.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\15066\CLionProjects\CforPy\BST\CforPy\main.c
 <<
 
 CMakeFiles\CforPy.dir\main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/CforPy.dir/main.c.s"
 	C:\PROGRA~1\MICROS~1\2022\Preview\VC\Tools\MSVC\1430~1.304\bin\Hostx86\x86\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\CforPy.dir\main.c.s /c C:\Users\15066\CLionProjects\CforPy\main.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\CforPy.dir\main.c.s /c C:\Users\15066\CLionProjects\CforPy\BST\CforPy\main.c
 <<
 
 CMakeFiles\CforPy.dir\include\Stack.c.obj: CMakeFiles\CforPy.dir\flags.make
 CMakeFiles\CforPy.dir\include\Stack.c.obj: ..\include\Stack.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\15066\CLionProjects\CforPy\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/CforPy.dir/include/Stack.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\15066\CLionProjects\CforPy\BST\CforPy\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/CforPy.dir/include/Stack.c.obj"
 	C:\PROGRA~1\MICROS~1\2022\Preview\VC\Tools\MSVC\1430~1.304\bin\Hostx86\x86\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoCMakeFiles\CforPy.dir\include\Stack.c.obj /FdCMakeFiles\CforPy.dir\ /FS -c C:\Users\15066\CLionProjects\CforPy\include\Stack.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoCMakeFiles\CforPy.dir\include\Stack.c.obj /FdCMakeFiles\CforPy.dir\ /FS -c C:\Users\15066\CLionProjects\CforPy\BST\CforPy\include\Stack.c
 <<
 
 CMakeFiles\CforPy.dir\include\Stack.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/CforPy.dir/include/Stack.c.i"
 	C:\PROGRA~1\MICROS~1\2022\Preview\VC\Tools\MSVC\1430~1.304\bin\Hostx86\x86\cl.exe > CMakeFiles\CforPy.dir\include\Stack.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\15066\CLionProjects\CforPy\include\Stack.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\15066\CLionProjects\CforPy\BST\CforPy\include\Stack.c
 <<
 
 CMakeFiles\CforPy.dir\include\Stack.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/CforPy.dir/include/Stack.c.s"
 	C:\PROGRA~1\MICROS~1\2022\Preview\VC\Tools\MSVC\1430~1.304\bin\Hostx86\x86\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\CforPy.dir\include\Stack.c.s /c C:\Users\15066\CLionProjects\CforPy\include\Stack.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\CforPy.dir\include\Stack.c.s /c C:\Users\15066\CLionProjects\CforPy\BST\CforPy\include\Stack.c
 <<
 
 CMakeFiles\CforPy.dir\include\Tree.c.obj: CMakeFiles\CforPy.dir\flags.make
 CMakeFiles\CforPy.dir\include\Tree.c.obj: ..\include\Tree.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\15066\CLionProjects\CforPy\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/CforPy.dir/include/Tree.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\15066\CLionProjects\CforPy\BST\CforPy\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/CforPy.dir/include/Tree.c.obj"
 	C:\PROGRA~1\MICROS~1\2022\Preview\VC\Tools\MSVC\1430~1.304\bin\Hostx86\x86\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoCMakeFiles\CforPy.dir\include\Tree.c.obj /FdCMakeFiles\CforPy.dir\ /FS -c C:\Users\15066\CLionProjects\CforPy\include\Tree.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoCMakeFiles\CforPy.dir\include\Tree.c.obj /FdCMakeFiles\CforPy.dir\ /FS -c C:\Users\15066\CLionProjects\CforPy\BST\CforPy\include\Tree.c
 <<
 
 CMakeFiles\CforPy.dir\include\Tree.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/CforPy.dir/include/Tree.c.i"
 	C:\PROGRA~1\MICROS~1\2022\Preview\VC\Tools\MSVC\1430~1.304\bin\Hostx86\x86\cl.exe > CMakeFiles\CforPy.dir\include\Tree.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\15066\CLionProjects\CforPy\include\Tree.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\15066\CLionProjects\CforPy\BST\CforPy\include\Tree.c
 <<
 
 CMakeFiles\CforPy.dir\include\Tree.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/CforPy.dir/include/Tree.c.s"
 	C:\PROGRA~1\MICROS~1\2022\Preview\VC\Tools\MSVC\1430~1.304\bin\Hostx86\x86\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\CforPy.dir\include\Tree.c.s /c C:\Users\15066\CLionProjects\CforPy\include\Tree.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\CforPy.dir\include\Tree.c.s /c C:\Users\15066\CLionProjects\CforPy\BST\CforPy\include\Tree.c
 <<
 
 CMakeFiles\CforPy.dir\include\Dict.c.obj: CMakeFiles\CforPy.dir\flags.make
 CMakeFiles\CforPy.dir\include\Dict.c.obj: ..\include\Dict.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\15066\CLionProjects\CforPy\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/CforPy.dir/include/Dict.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\15066\CLionProjects\CforPy\BST\CforPy\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/CforPy.dir/include/Dict.c.obj"
 	C:\PROGRA~1\MICROS~1\2022\Preview\VC\Tools\MSVC\1430~1.304\bin\Hostx86\x86\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoCMakeFiles\CforPy.dir\include\Dict.c.obj /FdCMakeFiles\CforPy.dir\ /FS -c C:\Users\15066\CLionProjects\CforPy\include\Dict.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoCMakeFiles\CforPy.dir\include\Dict.c.obj /FdCMakeFiles\CforPy.dir\ /FS -c C:\Users\15066\CLionProjects\CforPy\BST\CforPy\include\Dict.c
 <<
 
 CMakeFiles\CforPy.dir\include\Dict.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/CforPy.dir/include/Dict.c.i"
 	C:\PROGRA~1\MICROS~1\2022\Preview\VC\Tools\MSVC\1430~1.304\bin\Hostx86\x86\cl.exe > CMakeFiles\CforPy.dir\include\Dict.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\15066\CLionProjects\CforPy\include\Dict.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\15066\CLionProjects\CforPy\BST\CforPy\include\Dict.c
 <<
 
 CMakeFiles\CforPy.dir\include\Dict.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/CforPy.dir/include/Dict.c.s"
 	C:\PROGRA~1\MICROS~1\2022\Preview\VC\Tools\MSVC\1430~1.304\bin\Hostx86\x86\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\CforPy.dir\include\Dict.c.s /c C:\Users\15066\CLionProjects\CforPy\include\Dict.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\CforPy.dir\include\Dict.c.s /c C:\Users\15066\CLionProjects\CforPy\BST\CforPy\include\Dict.c
 <<
 
 # Object files for target CforPy
@@ -147,9 +147,9 @@ CforPy.exe: CMakeFiles\CforPy.dir\include\Tree.c.obj
 CforPy.exe: CMakeFiles\CforPy.dir\include\Dict.c.obj
 CforPy.exe: CMakeFiles\CforPy.dir\build.make
 CforPy.exe: CMakeFiles\CforPy.dir\objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\15066\CLionProjects\CforPy\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable CforPy.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\15066\CLionProjects\CforPy\BST\CforPy\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable CforPy.exe"
 	C:\Users\15066\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.4746.93\bin\cmake\win\bin\cmake.exe -E vs_link_exe --intdir=CMakeFiles\CforPy.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\mt.exe --manifests -- C:\PROGRA~1\MICROS~1\2022\Preview\VC\Tools\MSVC\1430~1.304\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\CforPy.dir\objects1.rsp @<<
- /out:CforPy.exe /implib:CforPy.lib /pdb:C:\Users\15066\CLionProjects\CforPy\cmake-build-debug\CforPy.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+ /out:CforPy.exe /implib:CforPy.lib /pdb:C:\Users\15066\CLionProjects\CforPy\BST\CforPy\cmake-build-debug\CforPy.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
 <<
 
 # Rule to build all files generated by this target.
@@ -161,6 +161,6 @@ CMakeFiles\CforPy.dir\clean:
 .PHONY : CMakeFiles\CforPy.dir\clean
 
 CMakeFiles\CforPy.dir\depend:
-	$(CMAKE_COMMAND) -E cmake_depends "NMake Makefiles" C:\Users\15066\CLionProjects\CforPy C:\Users\15066\CLionProjects\CforPy C:\Users\15066\CLionProjects\CforPy\cmake-build-debug C:\Users\15066\CLionProjects\CforPy\cmake-build-debug C:\Users\15066\CLionProjects\CforPy\cmake-build-debug\CMakeFiles\CforPy.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "NMake Makefiles" C:\Users\15066\CLionProjects\CforPy\BST\CforPy C:\Users\15066\CLionProjects\CforPy\BST\CforPy C:\Users\15066\CLionProjects\CforPy\BST\CforPy\cmake-build-debug C:\Users\15066\CLionProjects\CforPy\BST\CforPy\cmake-build-debug C:\Users\15066\CLionProjects\CforPy\BST\CforPy\cmake-build-debug\CMakeFiles\CforPy.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles\CforPy.dir\depend
 

@@ -5,31 +5,20 @@
 #include "Windows.h"
 
 int main() {
-    unsigned int *array,lang;
-    puts("Input The Length :\n");
-    scanf_s("%d",&lang);
     Tree tr = Tree_NewTree();
-    array = malloc(4*lang);
-    if(!array){
-        perror("NULL ARRAY !");
-        return -1;
+    int *a = malloc(4*10000);
+    for(int i=0;i<10000;i++){
+        a[i] = rand();
+        Tree_Insert(&tr,a[i],999);
     }
-    for(int ii=0;ii<1000;ii++){
-        printf_s("%d\n",ii);
-        for(int i=0;i<lang;i++){
-            array[i] = rand();
-            Tree_Insert(&tr,array[i],0);
-        }
-        for(int i=0;i<lang;i++){
-            Tree_Delete(&tr,array[i]);
+    for(int i=0;i<10000;i++){
+        if(999 != Tree_Get(tr,a[i])){
+            puts("????????????");
+        }else{
+            putchar('o');
         }
     }
-    system("pause");
-    system("pause");
-    //Tree_Destroy(&tr);
-    system("pause");
-    free(array);
-    system("pause");
+    Tree_Destroy(&tr);
     return 0;
 }
 

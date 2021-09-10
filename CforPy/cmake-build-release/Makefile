@@ -46,10 +46,10 @@ RM = C:\Users\15066\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.4746.93\
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\15066\CLionProjects\CforPy
+CMAKE_SOURCE_DIR = C:\Users\15066\CLionProjects\CforPy\BST\CforPy
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\15066\CLionProjects\CforPy\cmake-build-release
+CMAKE_BINARY_DIR = C:\Users\15066\CLionProjects\CforPy\BST\CforPy\cmake-build-release
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -76,9 +76,9 @@ rebuild_cache\fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\15066\CLionProjects\CforPy\cmake-build-release\CMakeFiles C:\Users\15066\CLionProjects\CforPy\cmake-build-release\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\15066\CLionProjects\CforPy\BST\CforPy\cmake-build-release\CMakeFiles C:\Users\15066\CLionProjects\CforPy\BST\CforPy\cmake-build-release\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\15066\CLionProjects\CforPy\cmake-build-release\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\15066\CLionProjects\CforPy\BST\CforPy\cmake-build-release\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
