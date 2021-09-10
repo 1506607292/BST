@@ -22,7 +22,6 @@
 StackNode *Stack_NewNode() {
     StackNode *pointer = malloc(sizeof(StackNode));
     if (pointer == NULL) {
-        //perror("Failed to get new space !");
         return NULL;
     }
     pointer->object = NULL;
@@ -36,8 +35,7 @@ Stack Stack_New() {
 }
 
 void Stack_Push(Stack *stack, void *object) {
-    if(stack == NULL){
-        //perror("NULL stack !");
+    if (stack == NULL) {
         return;
     }
     StackNode *pointer = Stack_NewNode();
@@ -47,24 +45,20 @@ void Stack_Push(Stack *stack, void *object) {
 }
 
 void *Stack_Top(Stack *stack) {
-    if(stack == NULL){
-        //perror("NULL stack !");
+    if (stack == NULL) {
         return NULL;
     }
-    if(Stack_IsEmpty(stack)){
-        //perror("Empty stack !");
+    if (Stack_IsEmpty(*stack)) {
         return NULL;
     }
     return stack->Top->object;
 }
 
 void *Stack_Pop(Stack *stack) {
-    if(stack == NULL){
-        ////perror("NULL stack !");
+    if (stack == NULL) {
         return NULL;
     }
-    if(Stack_IsEmpty(stack)){
-        //perror("Empty stack !");
+    if (Stack_IsEmpty(*stack)) {
         return NULL;
     }
     void *object = stack->Top->object;
@@ -74,19 +68,16 @@ void *Stack_Pop(Stack *stack) {
     return object;
 }
 
-bool Stack_IsEmpty(Stack *stack) {
-    if(stack == NULL){
-        return true;
-    }
-    return stack->Top == NULL;
+bool Stack_IsEmpty(Stack stack) {
+    return stack.Top == NULL;
 }
 
 void Stack_Destroy(Stack *stack) {
-    if(stack == NULL){
-        //perror("NULL stack !");
+    if (stack == NULL) {
         return;
     }
-    while (!Stack_IsEmpty(stack)) {
+    while (!Stack_IsEmpty(*stack)) {
         Stack_Pop(stack);
     }
+    stack->Top = NULL;
 }

@@ -125,19 +125,19 @@ void Tree_Destroy(Tree *tree) {
     TreeNode *pointer = tree->root;
     Stack stack = Stack_New();
     Stack stackFree = Stack_New();
-    while (!Stack_IsEmpty(&stack) || pointer) {
+    while (!Stack_IsEmpty(stack) || pointer) {
         while (pointer != NULL) {
             Stack_Push(&stack, pointer);
             pointer = pointer->L;
         }
-        if (!Stack_IsEmpty(&stack)) {
+        if (!Stack_IsEmpty(stack)) {
             pointer = Stack_Pop(&stack);
             Stack_Push(&stackFree, pointer);
             pointer = pointer->R;
         }
     }
     Stack_Destroy(&stack);
-    while (!Stack_IsEmpty(&stackFree)) {
+    while (!Stack_IsEmpty(stackFree)) {
         free(Stack_Pop(&stackFree));
     }
     tree->root = NULL;
@@ -236,12 +236,12 @@ void Tree_Show_(TreeNode *tree) {
         return;
     }
     Stack stack = Stack_New();
-    while (!Stack_IsEmpty(&stack) || tree) {
+    while (!Stack_IsEmpty(stack) || tree) {
         while (tree != NULL) {
             Stack_Push(&stack, tree);
             tree = tree->L;
         }
-        if (!Stack_IsEmpty(&stack)) {
+        if (!Stack_IsEmpty(stack)) {
             tree = Stack_Pop(&stack);
             printf_s("%p : %p\n", tree->Key, tree->Value);
             tree = tree->R;

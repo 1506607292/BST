@@ -22,15 +22,9 @@ typedef struct Stack {
 } Stack;
 
 Stack Stack_New();
-
-void Stack_Push(Stack *, void *);
-
-void *Stack_Top(Stack *);
-
-void *Stack_Pop(Stack *);
-
-void Stack_Destroy(Stack *);
-
-bool Stack_IsEmpty(Stack *);
-
+void Stack_Push(Stack *stack, void *object);
+void *Stack_Top(Stack *stack);
+void *Stack_Pop(Stack *stack);
+void Stack_Destroy(Stack *stack);
+bool Stack_IsEmpty(Stack stack);
 #endif //STACK_H
