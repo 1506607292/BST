@@ -77,7 +77,12 @@ int *random(unsigned int length) { // remember to free the array
     }
     return a;
 }
+struct A{
 
+};
+struct B{
+
+};
 int main() {
     unsigned int lang = 500000;
     int* a = random(lang);
@@ -88,6 +93,8 @@ int main() {
     for (int ii = 0; ii < 1000; ii++) {
         HashMap ha = HashMap_NewHashMap(lang);
         if (ha == NULL) {
+            puts("Too lang !");
+            system("pause");
             return 0;
         }
         for (int i = 0; i < lang; i++) {

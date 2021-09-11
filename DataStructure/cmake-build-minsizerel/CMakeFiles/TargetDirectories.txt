@@ -1,0 +1,3 @@
+C:/Users/15066/CLionProjects/CforPy/BST/DataStructure/cmake-build-minsizerel/CMakeFiles/DataStructure.dir
+C:/Users/15066/CLionProjects/CforPy/BST/DataStructure/cmake-build-minsizerel/CMakeFiles/edit_cache.dir
+C:/Users/15066/CLionProjects/CforPy/BST/DataStructure/cmake-build-minsizerel/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/15066/CLionProjects/CforPy/BST/DataStructure/include/HashMap.h
+stdbool.h
+-
+
+C:/Users/15066/CLionProjects/CforPy/BST/DataStructure/main.c
+stdio.h
+-
+stdlib.h
+-
+time.h
+-
+Windows.h
+-
+include/HashMap.h
+C:/Users/15066/CLionProjects/CforPy/BST/DataStructure/include/HashMap.h
+
