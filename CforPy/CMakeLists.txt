@@ -13,4 +13,4 @@ find_library("Python" "python39_d" "C:/Program Files/Python39/libs")
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(CforPy main.c include/Stack.c include/Stack.h include/Tree.c include/Tree.h include/Dict.c include/Dict.h)
+add_executable(CforPy main.c include/Stack.c include/Stack.h include/TreeMap.c include/TreeMap.h include/Dict.c include/Dict.h)

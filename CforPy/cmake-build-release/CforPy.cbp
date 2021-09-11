@@ -86,6 +86,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/15066/CLionProjects/CforPy/BST/CforPy/include/DCQueue.cpp">
+			<Option target="CforPy"/>
+		</Unit>
+		<Unit filename="C:/Users/15066/CLionProjects/CforPy/BST/CforPy/include/DCQueue.h">
+			<Option target="CforPy"/>
+		</Unit>
 		<Unit filename="C:/Users/15066/CLionProjects/CforPy/BST/CforPy/include/Dict.c">
 			<Option target="CforPy"/>
 		</Unit>

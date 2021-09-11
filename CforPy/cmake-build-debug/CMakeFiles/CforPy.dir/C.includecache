@@ -6,7 +6,27 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/15066/CLionProjects/CforPy/BST/CforPy/include/Tree.h
+C:/Users/15066/CLionProjects/CforPy/BST/CforPy/include/Stack.c
+Stack.h
+C:/Users/15066/CLionProjects/CforPy/BST/CforPy/include/Stack.h
+malloc.h
+-
+
+C:/Users/15066/CLionProjects/CforPy/BST/CforPy/include/Stack.h
+stdbool.h
+-
+
+C:/Users/15066/CLionProjects/CforPy/BST/CforPy/include/TreeMap.c
+malloc.h
+-
+stdio.h
+-
+Stack.h
+C:/Users/15066/CLionProjects/CforPy/BST/CforPy/include/Stack.h
+TreeMap.h
+C:/Users/15066/CLionProjects/CforPy/BST/CforPy/include/TreeMap.h
+
+C:/Users/15066/CLionProjects/CforPy/BST/CforPy/include/TreeMap.h
 stdbool.h
 -
 
@@ -15,8 +35,8 @@ stdio.h
 -
 stdlib.h
 -
-include/Tree.h
-C:/Users/15066/CLionProjects/CforPy/BST/CforPy/include/Tree.h
+include/TreeMap.h
+C:/Users/15066/CLionProjects/CforPy/BST/CforPy/include/TreeMap.h
 time.h
 -
 Windows.h

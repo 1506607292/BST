@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/15066/CLionProjects/CforPy/BST/DataStructure/include/Stack.h
+stdbool.h
+-
+
+C:/Users/15066/CLionProjects/CforPy/BST/DataStructure/main.c
+stdio.h
+-
+stdlib.h
+-
+include/Stack.h
+C:/Users/15066/CLionProjects/CforPy/BST/DataStructure/include/Stack.h
+

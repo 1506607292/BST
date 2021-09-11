@@ -1,11 +1,4 @@
 C:\Users\15066\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.4746.93\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Release -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - NMake Makefiles" C:\Users\15066\CLionProjects\CforPy\BST\CforPy
--- The C compiler identification is MSVC 19.30.30423.0
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - failed
--- Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Preview/VC/Tools/MSVC/14.30.30423/bin/Hostx86/x86/cl.exe
--- Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Preview/VC/Tools/MSVC/14.30.30423/bin/Hostx86/x86/cl.exe - works
--- Detecting C compile features
--- Detecting C compile features - done
 -- Configuring done
 -- Generating done
 -- Build files have been written to: C:/Users/15066/CLionProjects/CforPy/BST/CforPy/cmake-build-release

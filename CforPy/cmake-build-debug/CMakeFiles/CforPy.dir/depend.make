@@ -6,10 +6,10 @@ CMakeFiles\CforPy.dir\include\Dict.c.obj: ..\include\Dict.c
 CMakeFiles\CforPy.dir\include\Stack.c.obj: ..\include\Stack.c
 CMakeFiles\CforPy.dir\include\Stack.c.obj: ..\include\Stack.h
 
-CMakeFiles\CforPy.dir\include\Tree.c.obj: ..\include\Stack.h
-CMakeFiles\CforPy.dir\include\Tree.c.obj: ..\include\Tree.c
-CMakeFiles\CforPy.dir\include\Tree.c.obj: ..\include\Tree.h
+CMakeFiles\CforPy.dir\include\TreeMap.c.obj: ..\include\Stack.h
+CMakeFiles\CforPy.dir\include\TreeMap.c.obj: ..\include\TreeMap.c
+CMakeFiles\CforPy.dir\include\TreeMap.c.obj: ..\include\TreeMap.h
 
-CMakeFiles\CforPy.dir\main.c.obj: ..\include\Tree.h
+CMakeFiles\CforPy.dir\main.c.obj: ..\include\TreeMap.h
 CMakeFiles\CforPy.dir\main.c.obj: ..\main.c
 

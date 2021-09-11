@@ -16,7 +16,7 @@ typedef struct TreeNode {
     void *Key;
     void *Value;
 } TreeNode;
-typedef struct Tree{
+typedef struct TreeMap{
     struct TreeNode *root;
 }Tree;
 Tree Tree_NewTree();
@@ -28,4 +28,6 @@ void Tree_Destroy(Tree *tree);
 void Tree_Show(Tree tree);
 void Tree_Display(Tree tree);
 void *Tree_Get(Tree tree, void *key);
+//Stack Tree_KeyToStack(Tree tree);
+//Stack Tree_ValueToStack(Tree tree);
 #endif //HASHTABLE_H

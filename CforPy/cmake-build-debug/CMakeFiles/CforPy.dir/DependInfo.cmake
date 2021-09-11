@@ -10,7 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_C
   "C:/Users/15066/CLionProjects/CforPy/BST/CforPy/include/Dict.c" "C:/Users/15066/CLionProjects/CforPy/BST/CforPy/cmake-build-debug/CMakeFiles/CforPy.dir/include/Dict.c.obj"
   "C:/Users/15066/CLionProjects/CforPy/BST/CforPy/include/Stack.c" "C:/Users/15066/CLionProjects/CforPy/BST/CforPy/cmake-build-debug/CMakeFiles/CforPy.dir/include/Stack.c.obj"
-  "C:/Users/15066/CLionProjects/CforPy/BST/CforPy/include/Tree.c" "C:/Users/15066/CLionProjects/CforPy/BST/CforPy/cmake-build-debug/CMakeFiles/CforPy.dir/include/Tree.c.obj"
+  "C:/Users/15066/CLionProjects/CforPy/BST/CforPy/include/TreeMap.c" "C:/Users/15066/CLionProjects/CforPy/BST/CforPy/cmake-build-debug/CMakeFiles/CforPy.dir/include/TreeMap.c.obj"
   "C:/Users/15066/CLionProjects/CforPy/BST/CforPy/main.c" "C:/Users/15066/CLionProjects/CforPy/BST/CforPy/cmake-build-debug/CMakeFiles/CforPy.dir/main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "MSVC")

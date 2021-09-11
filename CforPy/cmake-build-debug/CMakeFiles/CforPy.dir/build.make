@@ -93,23 +93,23 @@ CMakeFiles\CforPy.dir\include\Stack.c.s: cmake_force
  /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\CforPy.dir\include\Stack.c.s /c C:\Users\15066\CLionProjects\CforPy\BST\CforPy\include\Stack.c
 <<
 
-CMakeFiles\CforPy.dir\include\Tree.c.obj: CMakeFiles\CforPy.dir\flags.make
-CMakeFiles\CforPy.dir\include\Tree.c.obj: ..\include\Tree.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\15066\CLionProjects\CforPy\BST\CforPy\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/CforPy.dir/include/Tree.c.obj"
+CMakeFiles\CforPy.dir\include\TreeMap.c.obj: CMakeFiles\CforPy.dir\flags.make
+CMakeFiles\CforPy.dir\include\TreeMap.c.obj: ..\include\TreeMap.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\15066\CLionProjects\CforPy\BST\CforPy\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/CforPy.dir/include/TreeMap.c.obj"
 	C:\PROGRA~1\MICROS~1\2022\Preview\VC\Tools\MSVC\1430~1.304\bin\Hostx86\x86\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoCMakeFiles\CforPy.dir\include\Tree.c.obj /FdCMakeFiles\CforPy.dir\ /FS -c C:\Users\15066\CLionProjects\CforPy\BST\CforPy\include\Tree.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoCMakeFiles\CforPy.dir\include\TreeMap.c.obj /FdCMakeFiles\CforPy.dir\ /FS -c C:\Users\15066\CLionProjects\CforPy\BST\CforPy\include\TreeMap.c
 <<
 
-CMakeFiles\CforPy.dir\include\Tree.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/CforPy.dir/include/Tree.c.i"
-	C:\PROGRA~1\MICROS~1\2022\Preview\VC\Tools\MSVC\1430~1.304\bin\Hostx86\x86\cl.exe > CMakeFiles\CforPy.dir\include\Tree.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\15066\CLionProjects\CforPy\BST\CforPy\include\Tree.c
+CMakeFiles\CforPy.dir\include\TreeMap.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/CforPy.dir/include/TreeMap.c.i"
+	C:\PROGRA~1\MICROS~1\2022\Preview\VC\Tools\MSVC\1430~1.304\bin\Hostx86\x86\cl.exe > CMakeFiles\CforPy.dir\include\TreeMap.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\15066\CLionProjects\CforPy\BST\CforPy\include\TreeMap.c
 <<
 
-CMakeFiles\CforPy.dir\include\Tree.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/CforPy.dir/include/Tree.c.s"
+CMakeFiles\CforPy.dir\include\TreeMap.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/CforPy.dir/include/TreeMap.c.s"
 	C:\PROGRA~1\MICROS~1\2022\Preview\VC\Tools\MSVC\1430~1.304\bin\Hostx86\x86\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\CforPy.dir\include\Tree.c.s /c C:\Users\15066\CLionProjects\CforPy\BST\CforPy\include\Tree.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\CforPy.dir\include\TreeMap.c.s /c C:\Users\15066\CLionProjects\CforPy\BST\CforPy\include\TreeMap.c
 <<
 
 CMakeFiles\CforPy.dir\include\Dict.c.obj: CMakeFiles\CforPy.dir\flags.make
@@ -135,7 +135,7 @@ CMakeFiles\CforPy.dir\include\Dict.c.s: cmake_force
 CforPy_OBJECTS = \
 "CMakeFiles\CforPy.dir\main.c.obj" \
 "CMakeFiles\CforPy.dir\include\Stack.c.obj" \
-"CMakeFiles\CforPy.dir\include\Tree.c.obj" \
+"CMakeFiles\CforPy.dir\include\TreeMap.c.obj" \
 "CMakeFiles\CforPy.dir\include\Dict.c.obj"
 
 # External object files for target CforPy
@@ -143,7 +143,7 @@ CforPy_EXTERNAL_OBJECTS =
 
 CforPy.exe: CMakeFiles\CforPy.dir\main.c.obj
 CforPy.exe: CMakeFiles\CforPy.dir\include\Stack.c.obj
-CforPy.exe: CMakeFiles\CforPy.dir\include\Tree.c.obj
+CforPy.exe: CMakeFiles\CforPy.dir\include\TreeMap.c.obj
 CforPy.exe: CMakeFiles\CforPy.dir\include\Dict.c.obj
 CforPy.exe: CMakeFiles\CforPy.dir\build.make
 CforPy.exe: CMakeFiles\CforPy.dir\objects1.rsp
