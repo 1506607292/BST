@@ -11,12 +11,10 @@
 typedef struct StackNode_ {
     struct StackNode_ *Below;
     void *object;
-    int a[1024];
 } StackNode_;
 
 typedef struct Stack_ {
     struct StackNode_ *Top;
-    int a[1024];
 } Stack_;
 typedef Stack_* Stack;
 Stack Stack_New();

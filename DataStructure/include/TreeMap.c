@@ -157,7 +157,6 @@ bool Tree_Delete(TreeMap tree, void *key){
         } else {
             pointer->P->R = NULL;
         }
-        free(pointer);
     } else if (pointer->R == NULL) {
         if (Tree_IsRoot(tree, pointer)) {
             tree->root = pointer->L;
@@ -171,7 +170,6 @@ bool Tree_Delete(TreeMap tree, void *key){
             pointer->P->R = pointer->L;
         }
         pointer->L->P = pointer->P;
-        free(pointer);
     } else if (pointer->L == NULL) {
         if (Tree_IsRoot(tree, pointer)) {
             tree->root = pointer->R;
@@ -185,7 +183,6 @@ bool Tree_Delete(TreeMap tree, void *key){
             pointer->P->R = pointer->R;
         }
         pointer->R->P = pointer->P;
-        free(pointer);
     } else {
         TreeNode_ *ii;
         for (ii = pointer->R; ii->L != NULL; ii = ii->L);//右子树最小的一个
@@ -199,8 +196,9 @@ bool Tree_Delete(TreeMap tree, void *key){
         if(ii->R != NULL){
             ii->R->P = ii->P;
         }
-        free(ii);
+        pointer = ii;
     }
+    free(pointer);
     return true;
 }
 void Tree_Destroy(TreeMap tree){

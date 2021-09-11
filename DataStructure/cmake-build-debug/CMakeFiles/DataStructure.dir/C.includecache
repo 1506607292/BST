@@ -10,11 +10,19 @@ C:/Users/15066/CLionProjects/CforPy/BST/DataStructure/include/Stack.h
 stdbool.h
 -
 
+C:/Users/15066/CLionProjects/CforPy/BST/DataStructure/include/TreeMap.h
+stdbool.h
+-
+Stack.h
+C:/Users/15066/CLionProjects/CforPy/BST/DataStructure/include/Stack.h
+
 C:/Users/15066/CLionProjects/CforPy/BST/DataStructure/main.c
 stdio.h
 -
 stdlib.h
 -
-include/Stack.h
-C:/Users/15066/CLionProjects/CforPy/BST/DataStructure/include/Stack.h
+time.h
+-
+include/TreeMap.h
+C:/Users/15066/CLionProjects/CforPy/BST/DataStructure/include/TreeMap.h
 

@@ -9,5 +9,6 @@ CMakeFiles\DataStructure.dir\include\TreeMap.c.obj: ..\include\TreeMap.c
 CMakeFiles\DataStructure.dir\include\TreeMap.c.obj: ..\include\TreeMap.h
 
 CMakeFiles\DataStructure.dir\main.c.obj: ..\include\Stack.h
+CMakeFiles\DataStructure.dir\main.c.obj: ..\include\TreeMap.h
 CMakeFiles\DataStructure.dir\main.c.obj: ..\main.c
 

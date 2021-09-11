@@ -86,12 +86,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/15066/CLionProjects/CforPy/BST/CforPy/include/DCQueue.cpp">
-			<Option target="CforPy"/>
-		</Unit>
-		<Unit filename="C:/Users/15066/CLionProjects/CforPy/BST/CforPy/include/DCQueue.h">
-			<Option target="CforPy"/>
-		</Unit>
 		<Unit filename="C:/Users/15066/CLionProjects/CforPy/BST/CforPy/include/Dict.c">
 			<Option target="CforPy"/>
 		</Unit>
@@ -104,10 +98,10 @@
 		<Unit filename="C:/Users/15066/CLionProjects/CforPy/BST/CforPy/include/Stack.h">
 			<Option target="CforPy"/>
 		</Unit>
-		<Unit filename="C:/Users/15066/CLionProjects/CforPy/BST/CforPy/include/Tree.c">
+		<Unit filename="C:/Users/15066/CLionProjects/CforPy/BST/CforPy/include/TreeMap.c">
 			<Option target="CforPy"/>
 		</Unit>
-		<Unit filename="C:/Users/15066/CLionProjects/CforPy/BST/CforPy/include/Tree.h">
+		<Unit filename="C:/Users/15066/CLionProjects/CforPy/BST/CforPy/include/TreeMap.h">
 			<Option target="CforPy"/>
 		</Unit>
 		<Unit filename="C:/Users/15066/CLionProjects/CforPy/BST/CforPy/main.c">

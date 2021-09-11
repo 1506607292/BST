@@ -1,51 +1,54 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 //
 // Created by 15066 on 2021/9/11.
 //
-
-#include "include/Stack.h"
-
+#include "include/TreeMap.h"
+int *xipai(int lang) {
+    int* a = malloc(4 * lang);
+    for (int i = 0; i < lang; i++) {
+        a[i] = i;
+    }
+    int length = lang;
+    srand(time(NULL));
+    while (--length) {
+        int temp = rand()%(length+1);
+        int t = a[length];
+        a[length] = a[temp];
+        a[temp] = t;
+    }
+    return a;
+}
 int main() {
-    for(int ii=0;ii<8000;ii++){
-         printf_s("%d\n",ii);
-         Stack st = Stack_New();
-         for(int i=0;i<100000;i++){
-             Stack_Push(st,i);
-         }
-         Stack_Destroy(st);
-     }
-     system("pause");
-     system("pause");
-     system("pause");
-     system("pause");
+    unsigned int lang = 500000;
+    int *b = xipai(lang);
+    for (int ii = 0; ii < 1000000; ii++) {
+        clock_t start = clock();
+        TreeMap tr = Tree_NewTree();
+        for (int i = 0; i < lang; i++) {
+            Tree_Insert(tr, b[i], 0);
+        }
+        printf_s("%d\n",clock()-start);
+        start = clock();
+        for (int i = 0; i < lang; i++) {
+            Tree_Get(tr, b[i]);
+        }
+        printf_s("%d\n",clock()-start);
+        start = clock();
+        for (int i = 0; i < lang; i++) {
+            Tree_Delete(tr, b[i]);
+        }
+        printf_s("%d\n",clock()-start);
+        start = clock();
+        puts("=====================");
+        free(tr);
+        //Tree_Destroy(tr);
+    }
+    free(b);
+    system("pause");
+    system("pause");
+    system("pause");
+    system("pause");
     return 0;
 }
-
-//
-//#include <stdio.h>
-//#include <stdlib.h>
-////
-//// Created by 15066 on 2021/9/11.
-////
-//#include "include/TreeMap.h"
-//
-//int main() {
-//    TreeMap tr = Tree_NewTree();
-//    Tree_Insert(tr,4000,10);
-//    Tree_Insert(tr,125,1044234);
-//    Tree_Insert(tr,14,10423);
-//    Tree_Insert(tr,142,10423);
-//    Tree_Insert(tr,4234,10424);
-//    Tree_Insert(tr,4321,142430);
-//    Tree_Insert(tr,49871,143240);
-//    Stack s = Tree_KeyToStack(tr);
-//    while(!Stack_IsEmpty(s)){
-//        printf_s("key = %d\n", Stack_Pop(s));
-//    }
-//    Stack_Destroy(s);
-//    Tree_Display(tr);
-//    Tree_Destroy(tr);
-//    system("pause");
-//    return 0;
-//}

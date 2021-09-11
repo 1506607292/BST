@@ -166,29 +166,29 @@ include\Stack.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CforPy.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CforPy.dir\include\Stack.c.s
 .PHONY : include\Stack.c.s
 
-include\Tree.obj: include\Tree.c.obj
-.PHONY : include\Tree.obj
+include\TreeMap.obj: include\TreeMap.c.obj
+.PHONY : include\TreeMap.obj
 
 # target to build an object file
-include\Tree.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CforPy.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CforPy.dir\include\Tree.c.obj
-.PHONY : include\Tree.c.obj
+include\TreeMap.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CforPy.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CforPy.dir\include\TreeMap.c.obj
+.PHONY : include\TreeMap.c.obj
 
-include\Tree.i: include\Tree.c.i
-.PHONY : include\Tree.i
+include\TreeMap.i: include\TreeMap.c.i
+.PHONY : include\TreeMap.i
 
 # target to preprocess a source file
-include\Tree.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CforPy.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CforPy.dir\include\Tree.c.i
-.PHONY : include\Tree.c.i
+include\TreeMap.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CforPy.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CforPy.dir\include\TreeMap.c.i
+.PHONY : include\TreeMap.c.i
 
-include\Tree.s: include\Tree.c.s
-.PHONY : include\Tree.s
+include\TreeMap.s: include\TreeMap.c.s
+.PHONY : include\TreeMap.s
 
 # target to generate assembly for a file
-include\Tree.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CforPy.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CforPy.dir\include\Tree.c.s
-.PHONY : include\Tree.c.s
+include\TreeMap.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CforPy.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CforPy.dir\include\TreeMap.c.s
+.PHONY : include\TreeMap.c.s
 
 main.obj: main.c.obj
 .PHONY : main.obj
@@ -229,9 +229,9 @@ help:
 	@echo ... include/Stack.obj
 	@echo ... include/Stack.i
 	@echo ... include/Stack.s
-	@echo ... include/Tree.obj
-	@echo ... include/Tree.i
-	@echo ... include/Tree.s
+	@echo ... include/TreeMap.obj
+	@echo ... include/TreeMap.i
+	@echo ... include/TreeMap.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

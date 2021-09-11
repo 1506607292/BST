@@ -18,11 +18,9 @@ typedef struct TreeNode_ {
     struct TreeNode_ *P, *L, *R;
     void *Key;
     void *Value;
-    int a[1024];
 } TreeNode_;
 typedef struct TreeMap_{
     struct TreeNode_ *root;
-    int a[1024];
 }TreeMap_;
 typedef TreeMap_* TreeMap;
 TreeMap Tree_NewTree();

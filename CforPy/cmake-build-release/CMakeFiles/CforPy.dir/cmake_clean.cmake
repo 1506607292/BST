@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/CforPy.dir/include/Dict.c.obj"
   "CMakeFiles/CforPy.dir/include/Stack.c.obj"
-  "CMakeFiles/CforPy.dir/include/Tree.c.obj"
+  "CMakeFiles/CforPy.dir/include/TreeMap.c.obj"
   "CMakeFiles/CforPy.dir/main.c.obj"
   "CforPy.exe"
   "CforPy.exe.manifest"
