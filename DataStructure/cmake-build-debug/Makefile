@@ -118,6 +118,30 @@ DataStructure\fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DataStructure.dir\build
 .PHONY : DataStructure\fast
 
+include\HashMap.obj: include\HashMap.c.obj
+.PHONY : include\HashMap.obj
+
+# target to build an object file
+include\HashMap.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DataStructure.dir\include\HashMap.c.obj
+.PHONY : include\HashMap.c.obj
+
+include\HashMap.i: include\HashMap.c.i
+.PHONY : include\HashMap.i
+
+# target to preprocess a source file
+include\HashMap.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DataStructure.dir\include\HashMap.c.i
+.PHONY : include\HashMap.c.i
+
+include\HashMap.s: include\HashMap.c.s
+.PHONY : include\HashMap.s
+
+# target to generate assembly for a file
+include\HashMap.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DataStructure.dir\include\HashMap.c.s
+.PHONY : include\HashMap.c.s
+
 include\Stack.obj: include\Stack.c.obj
 .PHONY : include\Stack.obj
 
@@ -199,6 +223,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... DataStructure
+	@echo ... include/HashMap.obj
+	@echo ... include/HashMap.i
+	@echo ... include/HashMap.s
 	@echo ... include/Stack.obj
 	@echo ... include/Stack.i
 	@echo ... include/Stack.s

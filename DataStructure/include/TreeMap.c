@@ -1,7 +1,7 @@
 //
 // Created by 15066 on 2021/9/11.
 //
-
+#pragma once
 #include "TreeMap.h"
 ///////////////////////////
 #ifndef MALLOC_H
@@ -29,7 +29,7 @@ TreeNode_ *Tree_NewNode(void *key, void *value) {
 bool Tree_IsRoot(TreeMap tree, TreeNode_ *p) {
     return tree->root == p;
 }
-TreeMap Tree_NewTree() {
+TreeMap Tree_NewTreeMap() {
     TreeMap tree = (TreeMap_*)malloc(sizeof(TreeMap_));
     if(tree == NULL){
         return NULL;
@@ -250,7 +250,7 @@ void Tree_Display_(TreeNode_ *tree,int layer) {
     for(int i=0;i<layer*3;i++){
         putchar(' ');
     }
-    printf_s("%d:%d\n",tree->Key,tree->Value);
+    printf_s("%d:%d\n",(int)tree->Key,(int)tree->Value);
     Tree_Display_(tree->R,layer+1);
 }
 void Tree_Display(TreeMap tree){
@@ -272,6 +272,25 @@ Stack Tree_KeyToStack(TreeMap tree){
         if (!Stack_IsEmpty(stack)) {
             pointer = Stack_Pop(stack);
             Stack_Push(result, pointer->Key);
+            pointer = pointer->R;
+        }
+    }
+    Stack_Destroy(stack);
+    return result;
+}
+
+Stack Tree_ValueToStack(TreeMap tree){
+    TreeNode_ *pointer = tree->root;
+    Stack stack = Stack_New();
+    Stack result = Stack_New();
+    while (!Stack_IsEmpty(stack) || pointer) {
+        while (pointer != NULL) {
+            Stack_Push(stack, pointer);
+            pointer = pointer->L;
+        }
+        if (!Stack_IsEmpty(stack)) {
+            pointer = Stack_Pop(stack);
+            Stack_Push(result, pointer->Value);
             pointer = pointer->R;
         }
     }

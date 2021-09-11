@@ -1,10 +1,10 @@
+#pragma once
 #include "Stack.h"
 #ifndef MALLOC_H
 #define MALLOC_H
 #include<malloc.h>
 #endif
 ////////////////////////////////
-
 StackNode_ *Stack_NewNode(void *object) {
     StackNode_ *pointer = (StackNode_*)malloc(sizeof(StackNode_));
     if (pointer == NULL) {

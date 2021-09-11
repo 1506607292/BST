@@ -84,6 +84,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/15066/CLionProjects/CforPy/BST/DataStructure/include/HashMap.c">
+			<Option target="DataStructure"/>
+		</Unit>
+		<Unit filename="C:/Users/15066/CLionProjects/CforPy/BST/DataStructure/include/HashMap.h">
+			<Option target="DataStructure"/>
+		</Unit>
 		<Unit filename="C:/Users/15066/CLionProjects/CforPy/BST/DataStructure/include/Stack.c">
 			<Option target="DataStructure"/>
 		</Unit>

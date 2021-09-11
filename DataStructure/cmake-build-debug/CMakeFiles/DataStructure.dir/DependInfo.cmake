@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "C:/Users/15066/CLionProjects/CforPy/BST/DataStructure/include/HashMap.c" "C:/Users/15066/CLionProjects/CforPy/BST/DataStructure/cmake-build-debug/CMakeFiles/DataStructure.dir/include/HashMap.c.obj"
   "C:/Users/15066/CLionProjects/CforPy/BST/DataStructure/include/Stack.c" "C:/Users/15066/CLionProjects/CforPy/BST/DataStructure/cmake-build-debug/CMakeFiles/DataStructure.dir/include/Stack.c.obj"
   "C:/Users/15066/CLionProjects/CforPy/BST/DataStructure/include/TreeMap.c" "C:/Users/15066/CLionProjects/CforPy/BST/DataStructure/cmake-build-debug/CMakeFiles/DataStructure.dir/include/TreeMap.c.obj"
   "C:/Users/15066/CLionProjects/CforPy/BST/DataStructure/main.c" "C:/Users/15066/CLionProjects/CforPy/BST/DataStructure/cmake-build-debug/CMakeFiles/DataStructure.dir/main.c.obj"
