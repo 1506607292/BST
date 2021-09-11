@@ -52,6 +52,7 @@
     <property name="cf.first.check.clang-format" value="false" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="cmake.loaded.for.project" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../untitled" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -86,7 +87,7 @@
       <updated>1631329597709</updated>
       <workItem from="1631329600378" duration="3000" />
       <workItem from="1631329621490" duration="8893000" />
-      <workItem from="1631350863282" duration="13580000" />
+      <workItem from="1631350863282" duration="14727000" />
     </task>
     <servers />
   </component>
