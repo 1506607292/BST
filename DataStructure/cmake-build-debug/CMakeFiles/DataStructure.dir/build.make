@@ -131,12 +131,32 @@ CMakeFiles\DataStructure.dir\include\HashMap.c.s: cmake_force
  /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\DataStructure.dir\include\HashMap.c.s /c C:\Users\15066\CLionProjects\CforPy\BST\DataStructure\include\HashMap.c
 <<
 
+CMakeFiles\DataStructure.dir\include\DCQueue.c.obj: CMakeFiles\DataStructure.dir\flags.make
+CMakeFiles\DataStructure.dir\include\DCQueue.c.obj: ..\include\DCQueue.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\15066\CLionProjects\CforPy\BST\DataStructure\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/DataStructure.dir/include/DCQueue.c.obj"
+	C:\PROGRA~1\MICROS~1\2022\Preview\VC\Tools\MSVC\1430~1.304\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoCMakeFiles\DataStructure.dir\include\DCQueue.c.obj /FdCMakeFiles\DataStructure.dir\ /FS -c C:\Users\15066\CLionProjects\CforPy\BST\DataStructure\include\DCQueue.c
+<<
+
+CMakeFiles\DataStructure.dir\include\DCQueue.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/DataStructure.dir/include/DCQueue.c.i"
+	C:\PROGRA~1\MICROS~1\2022\Preview\VC\Tools\MSVC\1430~1.304\bin\Hostx64\x64\cl.exe > CMakeFiles\DataStructure.dir\include\DCQueue.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\15066\CLionProjects\CforPy\BST\DataStructure\include\DCQueue.c
+<<
+
+CMakeFiles\DataStructure.dir\include\DCQueue.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/DataStructure.dir/include/DCQueue.c.s"
+	C:\PROGRA~1\MICROS~1\2022\Preview\VC\Tools\MSVC\1430~1.304\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\DataStructure.dir\include\DCQueue.c.s /c C:\Users\15066\CLionProjects\CforPy\BST\DataStructure\include\DCQueue.c
+<<
+
 # Object files for target DataStructure
 DataStructure_OBJECTS = \
 "CMakeFiles\DataStructure.dir\main.c.obj" \
 "CMakeFiles\DataStructure.dir\include\Stack.c.obj" \
 "CMakeFiles\DataStructure.dir\include\TreeMap.c.obj" \
-"CMakeFiles\DataStructure.dir\include\HashMap.c.obj"
+"CMakeFiles\DataStructure.dir\include\HashMap.c.obj" \
+"CMakeFiles\DataStructure.dir\include\DCQueue.c.obj"
 
 # External object files for target DataStructure
 DataStructure_EXTERNAL_OBJECTS =
@@ -145,9 +165,10 @@ DataStructure.exe: CMakeFiles\DataStructure.dir\main.c.obj
 DataStructure.exe: CMakeFiles\DataStructure.dir\include\Stack.c.obj
 DataStructure.exe: CMakeFiles\DataStructure.dir\include\TreeMap.c.obj
 DataStructure.exe: CMakeFiles\DataStructure.dir\include\HashMap.c.obj
+DataStructure.exe: CMakeFiles\DataStructure.dir\include\DCQueue.c.obj
 DataStructure.exe: CMakeFiles\DataStructure.dir\build.make
 DataStructure.exe: CMakeFiles\DataStructure.dir\objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\15066\CLionProjects\CforPy\BST\DataStructure\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable DataStructure.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\15066\CLionProjects\CforPy\BST\DataStructure\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable DataStructure.exe"
 	C:\Users\15066\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.4746.93\bin\cmake\win\bin\cmake.exe -E vs_link_exe --intdir=CMakeFiles\DataStructure.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x64\mt.exe --manifests -- C:\PROGRA~1\MICROS~1\2022\Preview\VC\Tools\MSVC\1430~1.304\bin\Hostx64\x64\link.exe /nologo @CMakeFiles\DataStructure.dir\objects1.rsp @<<
  /out:DataStructure.exe /implib:DataStructure.lib /pdb:C:\Users\15066\CLionProjects\CforPy\BST\DataStructure\cmake-build-debug\DataStructure.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
 <<

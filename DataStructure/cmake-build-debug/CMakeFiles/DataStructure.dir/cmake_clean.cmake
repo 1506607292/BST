@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/DataStructure.dir/include/DCQueue.c.obj"
   "CMakeFiles/DataStructure.dir/include/HashMap.c.obj"
   "CMakeFiles/DataStructure.dir/include/Stack.c.obj"
   "CMakeFiles/DataStructure.dir/include/TreeMap.c.obj"

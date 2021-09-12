@@ -70,12 +70,12 @@ clean: CMakeFiles\DataStructure.dir\clean
 CMakeFiles\DataStructure.dir\all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DataStructure.dir\depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DataStructure.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\15066\CLionProjects\CforPy\BST\DataStructure\cmake-build-release\CMakeFiles --progress-num=1,2,3,4,5 "Built target DataStructure"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\15066\CLionProjects\CforPy\BST\DataStructure\cmake-build-release\CMakeFiles --progress-num=1,2,3,4,5,6 "Built target DataStructure"
 .PHONY : CMakeFiles\DataStructure.dir\all
 
 # Build rule for subdir invocation for target.
 CMakeFiles\DataStructure.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\15066\CLionProjects\CforPy\BST\DataStructure\cmake-build-release\CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\15066\CLionProjects\CforPy\BST\DataStructure\cmake-build-release\CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\DataStructure.dir\all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\15066\CLionProjects\CforPy\BST\DataStructure\cmake-build-release\CMakeFiles 0
 .PHONY : CMakeFiles\DataStructure.dir\rule

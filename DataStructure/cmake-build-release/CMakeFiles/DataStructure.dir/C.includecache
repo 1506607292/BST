@@ -6,7 +6,23 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/15066/CLionProjects/CforPy/BST/DataStructure/include/HashMap.c
+Stack.h
+C:/Users/15066/CLionProjects/CforPy/BST/DataStructure/include/Stack.h
+malloc.h
+-
+HashMap.h
 C:/Users/15066/CLionProjects/CforPy/BST/DataStructure/include/HashMap.h
+vcruntime_string.h
+-
+stdio.h
+C:/Users/15066/CLionProjects/CforPy/BST/DataStructure/include/stdio.h
+
+C:/Users/15066/CLionProjects/CforPy/BST/DataStructure/include/HashMap.h
+stdbool.h
+-
+
+C:/Users/15066/CLionProjects/CforPy/BST/DataStructure/include/Stack.h
 stdbool.h
 -
 

@@ -11,7 +11,7 @@
 
 typedef struct StackNode_ {
     struct StackNode_ *Below;
-    void *object;
+    void *Object;
 } StackNode_;
 
 typedef struct Stack_ {

@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/15066/CLionProjects/CforPy/BST/DataStructure/include/DCQueue.h
+stdbool.h
+-
+
 C:/Users/15066/CLionProjects/CforPy/BST/DataStructure/include/HashMap.h
 stdbool.h
 -
@@ -21,4 +25,6 @@ Windows.h
 -
 include/HashMap.h
 C:/Users/15066/CLionProjects/CforPy/BST/DataStructure/include/HashMap.h
+include/DCQueue.h
+C:/Users/15066/CLionProjects/CforPy/BST/DataStructure/include/DCQueue.h
 

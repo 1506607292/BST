@@ -118,6 +118,30 @@ DataStructure\fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DataStructure.dir\build
 .PHONY : DataStructure\fast
 
+include\DCQueue.obj: include\DCQueue.c.obj
+.PHONY : include\DCQueue.obj
+
+# target to build an object file
+include\DCQueue.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DataStructure.dir\include\DCQueue.c.obj
+.PHONY : include\DCQueue.c.obj
+
+include\DCQueue.i: include\DCQueue.c.i
+.PHONY : include\DCQueue.i
+
+# target to preprocess a source file
+include\DCQueue.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DataStructure.dir\include\DCQueue.c.i
+.PHONY : include\DCQueue.c.i
+
+include\DCQueue.s: include\DCQueue.c.s
+.PHONY : include\DCQueue.s
+
+# target to generate assembly for a file
+include\DCQueue.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DataStructure.dir\include\DCQueue.c.s
+.PHONY : include\DCQueue.c.s
+
 include\HashMap.obj: include\HashMap.c.obj
 .PHONY : include\HashMap.obj
 
@@ -223,6 +247,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... DataStructure
+	@echo ... include/DCQueue.obj
+	@echo ... include/DCQueue.i
+	@echo ... include/DCQueue.s
 	@echo ... include/HashMap.obj
 	@echo ... include/HashMap.i
 	@echo ... include/HashMap.s

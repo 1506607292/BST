@@ -14,15 +14,14 @@ typedef struct HashNode_{
     void *Key,*Value;
 }HashNode_;
 typedef struct HashMap_{
-    HashNode_ *table;
-    bool *status;
-    unsigned int size;
+    HashNode_ *Table;
+    bool *Status;
+    unsigned int Size;
 }HashMap_;
 typedef HashMap_* HashMap;
-HashMap HashMap_NewHashMap(unsigned int size);
+HashMap HashMap_New(unsigned int size);
 void HashMap_Destroy(HashMap hashMap);
 bool HashMap_Set(HashMap hashMap,void *key,void *value);
 void *HashMap_Get(HashMap hashMap, void *key);
 bool HashMap_Erase(HashMap hashMap, void *key);
-void HashMap_Show(HashMap hashMap);
 #endif //HASHTABLE_H

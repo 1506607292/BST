@@ -10,7 +10,7 @@ StackNode_ *Stack_NewNode(void *object) {
     if (pointer == NULL) {
         return NULL;
     }
-    pointer->object = object;
+    pointer->Object = object;
     pointer->Below = NULL;
     return pointer;
 }
@@ -32,13 +32,13 @@ void Stack_Push(Stack stack, void *object) {
     stack->Top = pointer;
 }
 void *Stack_Top(Stack stack) {
-    return Stack_IsEmpty(stack) ? NULL : stack->Top->object;
+    return Stack_IsEmpty(stack) ? NULL : stack->Top->Object;
 }
 void *Stack_Pop(Stack stack) {
     if (Stack_IsEmpty(stack)) {
         return NULL;
     }
-    void *object = stack->Top->object;
+    void *object = stack->Top->Object;
     void *oldTop = stack->Top;
     stack->Top = stack->Top->Below;
     free(oldTop);
