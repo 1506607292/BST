@@ -8,7 +8,7 @@
 #endif
 ////////////////////////////////
 #include "HashMap.h"
-#include <vcruntime_string.h>
+#include <string.h>
 HashMap HashMap_New(unsigned int size) {
     if(size == 0){
         return NULL;

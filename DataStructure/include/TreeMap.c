@@ -231,7 +231,7 @@ void Tree_Display_(TreeNode_ *tree,int layer) {
     for(int i=0;i<layer*3;i++){
         putchar(' ');
     }
-    printf_s("%d:%d\n",(unsigned long long)tree->Key,(unsigned long long)tree->Value);
+    printf("%d:%d\n",(unsigned long long)tree->Key,(unsigned long long)tree->Value);
     Tree_Display_(tree->R,layer+1);
 }
 void Tree_Display(TreeMap tree){

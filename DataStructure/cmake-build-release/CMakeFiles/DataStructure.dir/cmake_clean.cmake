@@ -1,12 +1,10 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/DataStructure.dir/include/DCQueue.c.obj"
-  "CMakeFiles/DataStructure.dir/include/HashMap.c.obj"
-  "CMakeFiles/DataStructure.dir/include/Stack.c.obj"
-  "CMakeFiles/DataStructure.dir/include/TreeMap.c.obj"
-  "CMakeFiles/DataStructure.dir/main.c.obj"
-  "DataStructure.exe"
-  "DataStructure.exe.manifest"
-  "DataStructure.lib"
+  "CMakeFiles/DataStructure.dir/include/DCQueue.c.o"
+  "CMakeFiles/DataStructure.dir/include/HashMap.c.o"
+  "CMakeFiles/DataStructure.dir/include/Stack.c.o"
+  "CMakeFiles/DataStructure.dir/include/TreeMap.c.o"
+  "CMakeFiles/DataStructure.dir/main.c.o"
+  "DataStructure"
   "DataStructure.pdb"
 )
 

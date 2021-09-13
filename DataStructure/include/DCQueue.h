@@ -13,9 +13,11 @@
 typedef struct DCQueueNode_{
     struct DCQueueNode_ *Last,*Next;
     void *Object;
+    int a[1024];
 }DCQueueNode_;
 typedef struct DCQueue_{
     DCQueueNode_ *Position;
+    int a[1024];
 }DCQueue_;
 typedef DCQueue_* DCQueue;
 DCQueue DCQueue_New();

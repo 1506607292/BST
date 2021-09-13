@@ -96,6 +96,7 @@ void *DCQueue_PopToNext(DCQueue queue){
     if(queue->Position->Next == queue->Position){
         object = queue->Position->Object;
         free(queue->Position);
+        queue->Position = NULL;
         return object;
     }
     DCQueueNode_ *temp = queue->Position;
@@ -112,7 +113,6 @@ void DCQueue_Destroy(DCQueue queue) {
     }
     DCQueueNode_ *temp = queue->Position, *last;
     do {
-        printf("del %lld\n", temp->Object);
         last = temp;
         temp = temp->Next;
         free(last);

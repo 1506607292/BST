@@ -1,0 +1,1 @@
+/usr/bin/cc -O3 -DNDEBUG   CMakeFiles/DataStructure.dir/main.c.o CMakeFiles/DataStructure.dir/include/Stack.c.o CMakeFiles/DataStructure.dir/include/TreeMap.c.o CMakeFiles/DataStructure.dir/include/HashMap.c.o CMakeFiles/DataStructure.dir/include/DCQueue.c.o  -o DataStructure 
