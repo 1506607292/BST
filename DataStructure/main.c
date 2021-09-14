@@ -2,9 +2,9 @@
 #include "include/random.h"
 #include "stdio.h"
 int main() {
-    unsigned int lang = 500000;
+    unsigned int lang = 50;
     unsigned long long *b = randUnsignedLong(lang);
-    for (int ii = 0; ii < 1000000; ii++) {
+    for (int ii = 0; ii < 1; ii++) {
         clock_t start = clock();
         TreeMap tr = Tree_New();
         for (int i = 0; i < lang; i++) {
@@ -17,19 +17,15 @@ int main() {
         }
         printf("%lld\n",(long long)clock()-start);
         start = clock();
+        Tree_Display(tr);
         for (unsigned long long i = 0; i < lang; i++) {
             Tree_Delete(tr, (void*)b[i]);
         }
         printf("%lld\n",(long long)clock()-start);
-        start = clock();
         puts("=====================");
         free(tr);
         //Tree_Destroy(tr);
     }
     free(b);
-    system("pause");
-    system("pause");
-    system("pause");
-    system("pause");
     return 0;
 }

@@ -126,7 +126,7 @@ void DCQueue_Show(DCQueue queue) {
     }
     DCQueueNode_ *i = queue->Position;
     do {
-        printf("%lld\n", i->Object);
+        printf("%p\n", i->Object);
         i = i->Next;
     } while (i != queue->Position);
 }

@@ -1,16 +1,16 @@
 //
 // Created by 15066 on 2021/9/11.
 //
-#pragma once
 #include "TreeMap.h"
 ///////////////////////////
 #ifndef MALLOC_H
 #include<malloc.h>
 #define MALLOC_H
 #endif
+
+#include <time.h>
 ///////////////////////////
 #ifndef STDIO_H
-#include<stdio.h>
 #define STDIO_H
 #endif
 ///////////////////////////
@@ -231,7 +231,7 @@ void Tree_Display_(TreeNode_ *tree,int layer) {
     for(int i=0;i<layer*3;i++){
         putchar(' ');
     }
-    printf("%d:%d\n",(unsigned long long)tree->Key,(unsigned long long)tree->Value);
+    printf("%p:%p\n",tree->Key,tree->Value);
     Tree_Display_(tree->R,layer+1);
 }
 void Tree_Display(TreeMap tree){

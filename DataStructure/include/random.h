@@ -22,7 +22,7 @@ long long unsigned* randUnsignedLong(long long unsigned int length) { // remembe
         a[i] = i;
     }
     srand((unsigned int)time(NULL));
-    long long unsigned temp = rand() % (length + 1);
+    long long unsigned temp;
     while (--length) {
         temp = rand() % (length + 1);
         long long unsigned t = a[length];

@@ -19,9 +19,15 @@
   <component name="ChangeListManager">
     <list default="true" id="ea68bf72-db94-4fc3-9c4f-57b721e01cf0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DataStructure.dir/include/DCQueue.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DataStructure.dir/include/DCQueue.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DataStructure.dir/include/TreeMap.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DataStructure.dir/include/TreeMap.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DataStructure.dir/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DataStructure.dir/main.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/DataStructure" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/DataStructure" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/DCQueue.c" beforeDir="false" afterPath="$PROJECT_DIR$/include/DCQueue.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/DCQueue.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/DCQueue.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/TreeMap.c" beforeDir="false" afterPath="$PROJECT_DIR$/include/TreeMap.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/random.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/random.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,11 +92,6 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -106,7 +107,9 @@
       <workItem from="1631418537448" duration="15105000" />
       <workItem from="1631500412171" duration="1116000" />
       <workItem from="1631501541305" duration="1628000" />
-      <workItem from="1631503709936" duration="5580000" />
+      <workItem from="1631503709936" duration="6317000" />
+      <workItem from="1631532986261" duration="4000" />
+      <workItem from="1631581769533" duration="588000" />
     </task>
     <servers />
   </component>
