@@ -9,7 +9,6 @@
 #endif
 ////////////////////////////////
 #include "DCQueue.h"
-#include "stdio.h"
 
 DCQueue DCQueue_New() {
     DCQueue queue = (DCQueue_ *) malloc(sizeof(DCQueue_));
@@ -64,10 +63,10 @@ bool DCQueue_PushToNext(DCQueue queue, void *object) {
     if (node == NULL) {
         return false;
     }
-    node->Last = queue->Position;
     node->Next = queue->Position->Next;
-    queue->Position->Next = node;
+    node->Last = queue->Position;
     queue->Position->Next->Last = node;
+    queue->Position->Next = node;
     return true;
 }
 void *DCQueue_PopToLast(DCQueue queue){
@@ -78,12 +77,14 @@ void *DCQueue_PopToLast(DCQueue queue){
     if(queue->Position->Next == queue->Position){
         object = queue->Position->Object;
         free(queue->Position);
+        queue->Position = NULL;
         return object;
     }
     DCQueueNode_ *temp = queue->Position;
+
     object = queue->Position->Object;
-    queue->Position->Last->Next = queue->Position->Next;
     queue->Position->Next->Last = queue->Position->Last;
+    queue->Position->Last->Next = queue->Position->Next;
     queue->Position = queue->Position->Last;
     free(temp);
     return object;
@@ -119,14 +120,10 @@ void DCQueue_Destroy(DCQueue queue) {
     } while (temp != queue->Position);
     free(queue);
 }
+void DCQueue_MoveToLast(DCQueue queue){
+    queue->Position = queue->Position->Last;
+}
 
-void DCQueue_Show(DCQueue queue) {
-    if (queue->Position == NULL) {
-        return;
-    }
-    DCQueueNode_ *i = queue->Position;
-    do {
-        printf("%p\n", i->Object);
-        i = i->Next;
-    } while (i != queue->Position);
+void DCQueue_MoveToNext(DCQueue queue){
+    queue->Position = queue->Position->Next;
 }

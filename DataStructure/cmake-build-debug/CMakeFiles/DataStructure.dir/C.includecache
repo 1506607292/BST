@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/mnt/c/Users/15066/CLionProjects/CforPy/BST/DataStructure/include/DCQueue.h
+stdbool.h
+-
+
 /mnt/c/Users/15066/CLionProjects/CforPy/BST/DataStructure/include/Stack.h
 stdbool.h
 -
@@ -25,6 +29,8 @@ time.h
 /mnt/c/Users/15066/CLionProjects/CforPy/BST/DataStructure/main.c
 include/TreeMap.h
 /mnt/c/Users/15066/CLionProjects/CforPy/BST/DataStructure/include/TreeMap.h
+include/DCQueue.h
+/mnt/c/Users/15066/CLionProjects/CforPy/BST/DataStructure/include/DCQueue.h
 include/random.h
 /mnt/c/Users/15066/CLionProjects/CforPy/BST/DataStructure/include/random.h
 stdio.h

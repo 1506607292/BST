@@ -14,6 +14,7 @@ CMakeFiles/DataStructure.dir/include/TreeMap.c.o: ../include/Stack.h
 CMakeFiles/DataStructure.dir/include/TreeMap.c.o: ../include/TreeMap.c
 CMakeFiles/DataStructure.dir/include/TreeMap.c.o: ../include/TreeMap.h
 
+CMakeFiles/DataStructure.dir/main.c.o: ../include/DCQueue.h
 CMakeFiles/DataStructure.dir/main.c.o: ../include/Stack.h
 CMakeFiles/DataStructure.dir/main.c.o: ../include/TreeMap.h
 CMakeFiles/DataStructure.dir/main.c.o: ../include/random.h

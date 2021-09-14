@@ -24,5 +24,6 @@ bool DCQueue_PushToNext(DCQueue queue,void *object);
 void *DCQueue_PopToLast(DCQueue queue);
 void *DCQueue_PopToNext(DCQueue queue);
 void DCQueue_Destroy(DCQueue queue);
-void DCQueue_Show(DCQueue queue);
-#endif //DATASTRUCTURE_DCQUEUE_H
+void DCQueue_MoveToLast(DCQueue queue);
+void DCQueue_MoveToNext(DCQueue queue);
+#endif //DCQUEUE_H
