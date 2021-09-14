@@ -79,6 +79,12 @@
 		<Unit filename="/mnt/c/Users/15066/CLionProjects/CforPy/BST/DataStructure/cmp.cpp">
 			<Option target="DataStructure"/>
 		</Unit>
+		<Unit filename="/mnt/c/Users/15066/CLionProjects/CforPy/BST/DataStructure/include/ArrayList.c">
+			<Option target="DataStructure"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/15066/CLionProjects/CforPy/BST/DataStructure/include/ArrayList.h">
+			<Option target="DataStructure"/>
+		</Unit>
 		<Unit filename="/mnt/c/Users/15066/CLionProjects/CforPy/BST/DataStructure/include/DCQueue.c">
 			<Option target="DataStructure"/>
 		</Unit>

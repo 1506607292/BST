@@ -7,11 +7,10 @@
 #include<malloc.h>
 #define MALLOC_H
 #endif
-
-#include <time.h>
 ///////////////////////////
 #ifndef STDIO_H
 #define STDIO_H
+#include <stdio.h>
 #endif
 ///////////////////////////
 TreeNode_ *Tree_NewNode(void *key, void *value) {
