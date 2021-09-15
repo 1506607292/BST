@@ -123,6 +123,33 @@ DataStructure/fast:
 	$(MAKE) -f CMakeFiles/DataStructure.dir/build.make CMakeFiles/DataStructure.dir/build
 .PHONY : DataStructure/fast
 
+include/ArrayList.o: include/ArrayList.c.o
+
+.PHONY : include/ArrayList.o
+
+# target to build an object file
+include/ArrayList.c.o:
+	$(MAKE) -f CMakeFiles/DataStructure.dir/build.make CMakeFiles/DataStructure.dir/include/ArrayList.c.o
+.PHONY : include/ArrayList.c.o
+
+include/ArrayList.i: include/ArrayList.c.i
+
+.PHONY : include/ArrayList.i
+
+# target to preprocess a source file
+include/ArrayList.c.i:
+	$(MAKE) -f CMakeFiles/DataStructure.dir/build.make CMakeFiles/DataStructure.dir/include/ArrayList.c.i
+.PHONY : include/ArrayList.c.i
+
+include/ArrayList.s: include/ArrayList.c.s
+
+.PHONY : include/ArrayList.s
+
+# target to generate assembly for a file
+include/ArrayList.c.s:
+	$(MAKE) -f CMakeFiles/DataStructure.dir/build.make CMakeFiles/DataStructure.dir/include/ArrayList.c.s
+.PHONY : include/ArrayList.c.s
+
 include/DCQueue.o: include/DCQueue.c.o
 
 .PHONY : include/DCQueue.o
@@ -267,6 +294,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... DataStructure"
+	@echo "... include/ArrayList.o"
+	@echo "... include/ArrayList.i"
+	@echo "... include/ArrayList.s"
 	@echo "... include/DCQueue.o"
 	@echo "... include/DCQueue.i"
 	@echo "... include/DCQueue.s"
