@@ -103,6 +103,12 @@
 		<Unit filename="/mnt/c/Users/15066/CLionProjects/CforPy/BST/DataStructure/include/Stack.h">
 			<Option target="DataStructure"/>
 		</Unit>
+		<Unit filename="/mnt/c/Users/15066/CLionProjects/CforPy/BST/DataStructure/include/String.c">
+			<Option target="DataStructure"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/15066/CLionProjects/CforPy/BST/DataStructure/include/String.h">
+			<Option target="DataStructure"/>
+		</Unit>
 		<Unit filename="/mnt/c/Users/15066/CLionProjects/CforPy/BST/DataStructure/include/TreeMap.c">
 			<Option target="DataStructure"/>
 		</Unit>

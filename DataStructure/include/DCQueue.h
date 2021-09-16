@@ -1,24 +1,12 @@
 //
 // Created by 15066 on 2021/9/12.
 //
-#pragma once
-#ifndef DATASTRUCTURE_DCQUEUE_H
-#define DATASTRUCTURE_DCQUEUE_H
-
-#ifndef STDBOOL_H
-#define STDBOOL_H
+#ifndef DCQUEUE_H
+#define DCQUEUE_H
 #include<stdbool.h>
-#endif
-///////////////////////////
-typedef struct DCQueueNode_{
-    struct DCQueueNode_ *Last,*Next;
-    void *Object;
-}DCQueueNode_;
-typedef struct DCQueue_{
-    DCQueueNode_ *Position;
-}DCQueue_;
-typedef DCQueue_* DCQueue;
+typedef struct DCQueue_* DCQueue;
 DCQueue DCQueue_New();
+void *DCQueue_Get(DCQueue queue);
 bool DCQueue_PushToLast(DCQueue queue,void *object);
 bool DCQueue_PushToNext(DCQueue queue,void *object);
 void *DCQueue_PopToLast(DCQueue queue);

@@ -1,12 +1,16 @@
-#pragma once
+
 #include "Stack.h"
-#ifndef MALLOC_H
-#define MALLOC_H
 #include<malloc.h>
-#endif
-////////////////////////////////
-StackNode_ *Stack_NewNode(void *object) {
-    StackNode_ *pointer = (StackNode_*)malloc(sizeof(StackNode_));
+struct StackNode_ {
+    struct StackNode_ *Below;
+    void *Object;
+};
+
+struct Stack_ {
+    struct StackNode_ *Top;
+};
+struct StackNode_ *Stack_NewNode(void *object) {
+    struct StackNode_ *pointer = (struct StackNode_*)malloc(sizeof(struct StackNode_));
     if (pointer == NULL) {
         return NULL;
     }
@@ -16,7 +20,7 @@ StackNode_ *Stack_NewNode(void *object) {
 }
 
 Stack Stack_New() {
-    Stack stack = (Stack_*)malloc(sizeof(Stack_));
+    Stack stack = (struct Stack_*)malloc(sizeof(struct Stack_));
     if(stack == NULL){
         return NULL;
     }
@@ -24,7 +28,7 @@ Stack Stack_New() {
     return stack;
 }
 void Stack_Push(Stack stack, void *object) {
-    StackNode_ *pointer = Stack_NewNode(object);
+    struct StackNode_ *pointer = Stack_NewNode(object);
     if (pointer == NULL) {
         return;
     }

@@ -1,18 +1,26 @@
 //
 // Created by 15066 on 2021/9/14.
 //
-#pragma once
-#ifndef MALLOC_H
-#define MALLOC_H
-
 #include<malloc.h>
-
-#endif
-////////////////////////////////
 #include "ArrayList.h"
+struct ArrayList_{
+    void **Array;
+    long long unsigned Size;
+    long long unsigned Capacity;
+};
+typedef struct ArrayList_* ArrayList;
+
+
+void *ArrayList_Get(ArrayList array,unsigned long long index){
+    return array->Array[index];
+}
+
+unsigned long long ArrayList_Size(ArrayList array){
+    return array->Size;
+}
 
 ArrayList ArrayList_New() {
-    ArrayList array = (ArrayList_ *) malloc(sizeof(ArrayList_));
+    ArrayList array = (struct ArrayList_ *) malloc(sizeof(struct ArrayList_));
     if (array == NULL) {
         return NULL;
     }

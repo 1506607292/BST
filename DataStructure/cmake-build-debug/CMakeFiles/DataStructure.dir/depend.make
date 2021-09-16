@@ -7,12 +7,17 @@ CMakeFiles/DataStructure.dir/include/ArrayList.c.o: ../include/ArrayList.h
 CMakeFiles/DataStructure.dir/include/DCQueue.c.o: ../include/DCQueue.c
 CMakeFiles/DataStructure.dir/include/DCQueue.c.o: ../include/DCQueue.h
 
+CMakeFiles/DataStructure.dir/include/HashMap.c.o: ../include/DCQueue.h
 CMakeFiles/DataStructure.dir/include/HashMap.c.o: ../include/HashMap.c
 CMakeFiles/DataStructure.dir/include/HashMap.c.o: ../include/HashMap.h
 
 CMakeFiles/DataStructure.dir/include/Stack.c.o: ../include/Stack.c
 CMakeFiles/DataStructure.dir/include/Stack.c.o: ../include/Stack.h
 
+CMakeFiles/DataStructure.dir/include/String.c.o: ../include/String.c
+CMakeFiles/DataStructure.dir/include/String.c.o: ../include/String.h
+
+CMakeFiles/DataStructure.dir/include/TreeMap.c.o: ../include/DCQueue.h
 CMakeFiles/DataStructure.dir/include/TreeMap.c.o: ../include/Stack.h
 CMakeFiles/DataStructure.dir/include/TreeMap.c.o: ../include/TreeMap.c
 CMakeFiles/DataStructure.dir/include/TreeMap.c.o: ../include/TreeMap.h

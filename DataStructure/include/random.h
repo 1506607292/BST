@@ -4,15 +4,8 @@
 
 #ifndef RANDOM_H
 #define RANDOM_H
-
-#ifndef STDLIB_H
-#define STDLIB_H
 #include <stdlib.h>
-#endif
-#ifndef TIME_H
-#define TIME_H
 #include <time.h>
-#endif
 long long unsigned* randUnsignedLong(long long unsigned int length) { // remember to free the array
     long long unsigned* a = (long long unsigned*)malloc(sizeof(long long unsigned) * length);
     if (a == NULL) {

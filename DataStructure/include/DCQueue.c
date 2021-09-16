@@ -1,17 +1,24 @@
 //
 // Created by 15066 on 2021/9/12.
 //
-#ifndef MALLOC_H
-#define MALLOC_H
-
 #include<malloc.h>
-
-#endif
-////////////////////////////////
 #include "DCQueue.h"
+struct DCQueueNode_{
+    struct DCQueueNode_ *Last,*Next;
+    void *Object;
+};
+struct DCQueue_{
+    struct DCQueueNode_ *Position;
+};
 
+void *DCQueue_Get(DCQueue queue){
+    if(queue->Position == NULL){
+        return NULL;
+    }
+    return queue->Position->Object;
+}
 DCQueue DCQueue_New() {
-    DCQueue queue = (DCQueue_ *) malloc(sizeof(DCQueue_));
+    DCQueue queue = (struct DCQueue_ *) malloc(sizeof(struct DCQueue_));
     if (queue == NULL) {
         return NULL;
     }
@@ -19,8 +26,8 @@ DCQueue DCQueue_New() {
     return queue;
 }
 
-DCQueueNode_ *DCQueue_NewNode(void *object) {
-    DCQueueNode_ *node = (DCQueueNode_ *) malloc(sizeof(DCQueueNode_));
+struct DCQueueNode_ *DCQueue_NewNode(void *object) {
+    struct DCQueueNode_ *node = (struct DCQueueNode_ *) malloc(sizeof(struct DCQueueNode_));
     if (node == NULL) {
         return NULL;
     }
@@ -38,7 +45,7 @@ bool DCQueue_PushToLast(DCQueue queue, void *object) {
         queue->Position->Next = queue->Position;
         return true;
     }
-    DCQueueNode_ *node = DCQueue_NewNode(object);
+    struct DCQueueNode_ *node = DCQueue_NewNode(object);
     if (node == NULL) {
         return false;
     }
@@ -59,7 +66,7 @@ bool DCQueue_PushToNext(DCQueue queue, void *object) {
         queue->Position->Next = queue->Position;
         return true;
     }
-    DCQueueNode_ *node = DCQueue_NewNode(object);
+    struct DCQueueNode_ *node = DCQueue_NewNode(object);
     if (node == NULL) {
         return false;
     }
@@ -80,7 +87,7 @@ void *DCQueue_PopToLast(DCQueue queue){
         queue->Position = NULL;
         return object;
     }
-    DCQueueNode_ *temp = queue->Position;
+    struct DCQueueNode_ *temp = queue->Position;
 
     object = queue->Position->Object;
     queue->Position->Next->Last = queue->Position->Last;
@@ -100,7 +107,7 @@ void *DCQueue_PopToNext(DCQueue queue){
         queue->Position = NULL;
         return object;
     }
-    DCQueueNode_ *temp = queue->Position;
+    struct DCQueueNode_ *temp = queue->Position;
     object = queue->Position->Object;
     queue->Position->Next->Last = queue->Position->Last;
     queue->Position->Last->Next = queue->Position->Next;
@@ -112,7 +119,7 @@ void DCQueue_Destroy(DCQueue queue) {
     if (queue->Position == NULL) {
         return;
     }
-    DCQueueNode_ *temp = queue->Position, *last;
+    struct DCQueueNode_ *temp = queue->Position, *last;
     do {
         last = temp;
         temp = temp->Next;

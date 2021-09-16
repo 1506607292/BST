@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/DataStructure.dir/include/DCQueue.c.o"
   "CMakeFiles/DataStructure.dir/include/HashMap.c.o"
   "CMakeFiles/DataStructure.dir/include/Stack.c.o"
+  "CMakeFiles/DataStructure.dir/include/String.c.o"
   "CMakeFiles/DataStructure.dir/include/TreeMap.c.o"
   "CMakeFiles/DataStructure.dir/main.c.o"
   "DataStructure"

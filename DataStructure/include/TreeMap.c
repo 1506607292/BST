@@ -1,20 +1,24 @@
 //
 // Created by 15066 on 2021/9/11.
 //
-#include "TreeMap.h"
-///////////////////////////
-#ifndef MALLOC_H
+
+
 #include<malloc.h>
-#define MALLOC_H
-#endif
-///////////////////////////
-#ifndef STDIO_H
-#define STDIO_H
-#include <stdio.h>
-#endif
-///////////////////////////
-TreeNode_ *Tree_NewNode(void *key, void *value) {
-    TreeNode_ *pointer = (TreeNode_ *) malloc(sizeof(TreeNode_));
+
+#include "Stack.h"
+
+#include "TreeMap.h"
+
+struct TreeNode_ {
+    struct TreeNode_ *P, *L, *R;
+    void *Key;
+    void *Value;
+};
+struct TreeMap_{
+    struct TreeNode_ *Root;
+};
+struct TreeNode_ *Tree_NewNode(void *key, void *value) {
+    struct TreeNode_ *pointer = (struct TreeNode_ *) malloc(sizeof(struct TreeNode_));
     if(pointer == NULL){
         return NULL;
     }
@@ -25,11 +29,27 @@ TreeNode_ *Tree_NewNode(void *key, void *value) {
     pointer->Value = value;
     return pointer;
 }
-bool Tree_IsRoot(TreeMap tree, TreeNode_ *p) {
+
+bool Tree_ContainKey(TreeMap tree, void *key){
+    struct TreeNode_ *pointer = tree->Root;
+    while (pointer != NULL) {
+        if (pointer->Key == key) {
+            return true;
+        }
+        if (pointer->Key > key) {
+            pointer = pointer->L;
+        } else {
+            pointer = pointer->R;
+        }
+    }
+    return false;
+}
+
+bool Tree_IsRoot(TreeMap tree, struct TreeNode_ *p) {
     return tree->Root == p;
 }
 TreeMap Tree_New() {
-    TreeMap tree = (TreeMap_*)malloc(sizeof(TreeMap_));
+    TreeMap tree = (struct TreeMap_*)malloc(sizeof(struct TreeMap_));
     if(tree == NULL){
         return NULL;
     }
@@ -45,7 +65,7 @@ bool Tree_Insert(TreeMap tree, void *key, void *value){
         tree->Root->P = NULL;
         return true;
     }
-    TreeNode_ *temp = tree->Root;
+    struct TreeNode_ *temp = tree->Root;
     while (1) {
         if (temp->Key == key) {
             return false;
@@ -58,7 +78,7 @@ bool Tree_Insert(TreeMap tree, void *key, void *value){
             break;
         }
     }
-    TreeNode_ *pointer = Tree_NewNode(key, value);
+    struct TreeNode_ *pointer = Tree_NewNode(key, value);
     if (pointer == NULL) {
         return false;
     }
@@ -75,7 +95,7 @@ bool Tree_SetOrInsert(TreeMap tree, void *key, void *value){
         tree->Root->P = NULL;
         return true;
     }
-    TreeNode_ *temp = tree->Root;
+    struct TreeNode_ *temp = tree->Root;
     while (1) {
         if (temp->Key == key) {
             temp->Key = key;
@@ -90,7 +110,7 @@ bool Tree_SetOrInsert(TreeMap tree, void *key, void *value){
             break;
         }
     }
-    TreeNode_ *pointer = Tree_NewNode(key, value);
+    struct TreeNode_ *pointer = Tree_NewNode(key, value);
     if (pointer == NULL) {
         return false;
     }
@@ -102,7 +122,7 @@ bool Tree_Set(TreeMap tree, void *key, void *value){
     if (tree->Root == NULL) {
         return false;
     }
-    TreeNode_ *pointer = tree->Root;
+    struct TreeNode_ *pointer = tree->Root;
     while (pointer != NULL) {
         if (pointer->Key == key) {
             pointer->Value = value;
@@ -117,7 +137,7 @@ bool Tree_Set(TreeMap tree, void *key, void *value){
     return false;
 }
 void *Tree_Get(TreeMap tree, void *key) {
-    TreeNode_ *pointer = tree->Root;
+    struct TreeNode_ *pointer = tree->Root;
     while (pointer != NULL) {
         if (pointer->Key == key) {
             return pointer->Value;
@@ -131,7 +151,7 @@ void *Tree_Get(TreeMap tree, void *key) {
     return NULL;
 }
 bool Tree_Delete(TreeMap tree, void *key){
-    TreeNode_ *pointer = tree->Root;
+    struct TreeNode_ *pointer = tree->Root;
     while (pointer != NULL) {
         if (pointer->Key == key) {
             break;
@@ -183,7 +203,7 @@ bool Tree_Delete(TreeMap tree, void *key){
         }
         pointer->R->P = pointer->P;
     } else {
-        TreeNode_ *ii;
+        struct TreeNode_ *ii;
         for (ii = pointer->R; ii->L != NULL; ii = ii->L);//右子树最小的一个
         pointer->Key = ii->Key;
         pointer->Value = ii->Value;
@@ -201,7 +221,7 @@ bool Tree_Delete(TreeMap tree, void *key){
     return true;
 }
 void Tree_Destroy(TreeMap tree){
-    TreeNode_ *pointer = tree->Root;
+    struct TreeNode_ *pointer = tree->Root;
     Stack stack = Stack_New();
     Stack stackToDestroy = Stack_New();
     while (!Stack_IsEmpty(stack) || pointer) {
@@ -222,7 +242,7 @@ void Tree_Destroy(TreeMap tree){
     Stack_Destroy(stackToDestroy);
     free(tree);
 }
-void Tree_Display_(TreeNode_ *tree,int layer) {
+void Tree_Display_(struct TreeNode_ *tree,int layer) {
     if(!tree){
         return;
     }
@@ -240,10 +260,10 @@ void Tree_Display(TreeMap tree){
         Tree_Display_(tree->Root,0);
     }
 }
-Stack Tree_KeyToStack(TreeMap tree){
-    TreeNode_ *pointer = tree->Root;
+DCQueue Tree_KeyToDCQueue(TreeMap tree){
+    struct TreeNode_ *pointer = tree->Root;
     Stack stack = Stack_New();
-    Stack result = Stack_New();
+    DCQueue result = DCQueue_New();
     while (!Stack_IsEmpty(stack) || pointer) {
         while (pointer != NULL) {
             Stack_Push(stack, pointer);
@@ -251,7 +271,7 @@ Stack Tree_KeyToStack(TreeMap tree){
         }
         if (!Stack_IsEmpty(stack)) {
             pointer = Stack_Pop(stack);
-            Stack_Push(result, pointer->Key);
+            DCQueue_PushToLast(result,pointer->Key);
             pointer = pointer->R;
         }
     }
@@ -259,10 +279,10 @@ Stack Tree_KeyToStack(TreeMap tree){
     return result;
 }
 
-Stack Tree_ValueToStack(TreeMap tree){
-    TreeNode_ *pointer = tree->Root;
+DCQueue Tree_ValueToDCQueue(TreeMap tree){
+    struct TreeNode_ *pointer = tree->Root;
     Stack stack = Stack_New();
-    Stack result = Stack_New();
+    DCQueue result = DCQueue_New();
     while (!Stack_IsEmpty(stack) || pointer) {
         while (pointer != NULL) {
             Stack_Push(stack, pointer);
@@ -270,7 +290,7 @@ Stack Tree_ValueToStack(TreeMap tree){
         }
         if (!Stack_IsEmpty(stack)) {
             pointer = Stack_Pop(stack);
-            Stack_Push(result, pointer->Value);
+            DCQueue_PushToLast(result,pointer->Value);
             pointer = pointer->R;
         }
     }

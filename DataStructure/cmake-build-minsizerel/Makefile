@@ -231,6 +231,33 @@ include/Stack.c.s:
 	$(MAKE) -f CMakeFiles/DataStructure.dir/build.make CMakeFiles/DataStructure.dir/include/Stack.c.s
 .PHONY : include/Stack.c.s
 
+include/String.o: include/String.c.o
+
+.PHONY : include/String.o
+
+# target to build an object file
+include/String.c.o:
+	$(MAKE) -f CMakeFiles/DataStructure.dir/build.make CMakeFiles/DataStructure.dir/include/String.c.o
+.PHONY : include/String.c.o
+
+include/String.i: include/String.c.i
+
+.PHONY : include/String.i
+
+# target to preprocess a source file
+include/String.c.i:
+	$(MAKE) -f CMakeFiles/DataStructure.dir/build.make CMakeFiles/DataStructure.dir/include/String.c.i
+.PHONY : include/String.c.i
+
+include/String.s: include/String.c.s
+
+.PHONY : include/String.s
+
+# target to generate assembly for a file
+include/String.c.s:
+	$(MAKE) -f CMakeFiles/DataStructure.dir/build.make CMakeFiles/DataStructure.dir/include/String.c.s
+.PHONY : include/String.c.s
+
 include/TreeMap.o: include/TreeMap.c.o
 
 .PHONY : include/TreeMap.o
@@ -306,6 +333,9 @@ help:
 	@echo "... include/Stack.o"
 	@echo "... include/Stack.i"
 	@echo "... include/Stack.s"
+	@echo "... include/String.o"
+	@echo "... include/String.i"
+	@echo "... include/String.s"
 	@echo "... include/TreeMap.o"
 	@echo "... include/TreeMap.i"
 	@echo "... include/TreeMap.s"

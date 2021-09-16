@@ -1,24 +1,58 @@
 //
 // Created by 15066 on 2021/9/11.
 //
-#pragma once
-#ifndef MALLOC_H
-#define MALLOC_H
 #include<malloc.h>
-#endif
-////////////////////////////////
+#include<string.h>
 #include "HashMap.h"
-#include <string.h>
-HashMap HashMap_New(unsigned int size) {
+struct HashNode_{
+    void *Key,*Value;
+};
+struct HashMap_{
+    struct HashNode_ *Table;
+    bool *Status;
+    unsigned long long Size;
+};
+DCQueue HashMap_ValueToDCQueue(HashMap hashMap){
+    DCQueue result = DCQueue_New();
+    for(unsigned long long i=0;i<hashMap->Size;i++){
+        if(hashMap->Status[i] == true){
+            DCQueue_PushToLast(result,hashMap->Table[i].Value);
+        }
+    }
+    return result;
+}
+DCQueue HashMap_KeyToDCQueue(HashMap hashMap){
+    DCQueue result = DCQueue_New();
+    for(unsigned long long i=0;i<hashMap->Size;i++){
+        if(hashMap->Status[i] == true){
+            DCQueue_PushToLast(result,hashMap->Table[i].Key);
+        }
+    }
+    return result;
+}
+bool HashMap_ReSize(HashMap hashMap,unsigned long long size){
+    void *temp = realloc(hashMap->Table,sizeof(struct HashNode_)*size);
+    if(temp == NULL){
+        return false;
+    }
+    if(temp == hashMap->Table){
+        hashMap->Size = size;
+        return true;
+    }else{
+        hashMap->Table = (struct HashNode_*)temp;
+        return true;
+    }
+}
+HashMap HashMap_New(unsigned long long size) {
     if(size == 0){
         return NULL;
     }
-    HashMap hashMap = (HashMap_ *) malloc(sizeof(HashMap_));
+    HashMap hashMap = (struct HashMap_ *) malloc(sizeof(struct HashMap_));
     if (hashMap == NULL) {
         return NULL;
     }
     hashMap->Size = size;
-    hashMap->Table = (HashNode_ *) malloc(sizeof(HashNode_) * size);
+    hashMap->Table = (struct HashNode_ *) malloc(sizeof(struct HashNode_) * size);
     if (hashMap->Table == NULL) {
         free(hashMap);
         return NULL;

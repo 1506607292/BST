@@ -21,8 +21,8 @@ stdbool.h
 /mnt/c/Users/15066/CLionProjects/CforPy/BST/DataStructure/include/TreeMap.h
 stdbool.h
 -
-Stack.h
-/mnt/c/Users/15066/CLionProjects/CforPy/BST/DataStructure/include/Stack.h
+DCQueue.h
+/mnt/c/Users/15066/CLionProjects/CforPy/BST/DataStructure/include/DCQueue.h
 
 /mnt/c/Users/15066/CLionProjects/CforPy/BST/DataStructure/include/random.h
 stdlib.h
@@ -31,6 +31,8 @@ time.h
 -
 
 /mnt/c/Users/15066/CLionProjects/CforPy/BST/DataStructure/main.c
+unistd.h
+-
 include/TreeMap.h
 /mnt/c/Users/15066/CLionProjects/CforPy/BST/DataStructure/include/TreeMap.h
 include/DCQueue.h
@@ -39,6 +41,8 @@ include/ArrayList.h
 /mnt/c/Users/15066/CLionProjects/CforPy/BST/DataStructure/include/ArrayList.h
 include/random.h
 /mnt/c/Users/15066/CLionProjects/CforPy/BST/DataStructure/include/random.h
+include/Stack.h
+/mnt/c/Users/15066/CLionProjects/CforPy/BST/DataStructure/include/Stack.h
 stdio.h
 /mnt/c/Users/15066/CLionProjects/CforPy/BST/DataStructure/stdio.h
 
